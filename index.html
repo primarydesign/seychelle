@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>Background images - fullPage.js</title>
+	<meta name="author" content="Alvaro Trigo Lopez" />
+	<meta name="description" content="fullPage full-screen backgrounds." />
+	<meta name="keywords"  content="fullpage,jquery,demo,screen,fullscreen,backgrounds,full-screen" />
+	<meta name="Resource-type" content="Document" />
+
+	<link rel="stylesheet" type="text/css" href="css/reset.css" /> 
+	<link rel="stylesheet" type="text/css" href="jquery.fullPage.css" />
+	<link rel="stylesheet" type="text/css" href="examples/examples.css" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" /> 
+	<style>
+
+	/* Style for our header texts
+	* --------------------------------------- */
+	h1{
+		font-size: 5em;
+		font-family: arial,helvetica;
+		color: #fff;
+		margin:0;
+		padding:0;
+	}
+
+	/* Centered texts in each section
+	* --------------------------------------- */
+	.section{
+		text-align:center;
+	}
+
+
+	/* Backgrounds will cover all the section
+	* --------------------------------------- */
+	.section{
+		background-size:cover;
+	}
+	.slide{
+	 	background-size:cover;
+	}
+			/* Defining each section background and styles
+	* --------------------------------------- */
+	
+	#section0{
+		background:url(images/luxury-penthouse-outdoor-terrace_Seychelle_Santa-Monica-California.jpg);
+		
+	}
+	#section2{
+		background:url(images/luxury-penthouse-living-room-at-the_Seychelle_Santa-Monica-California.jpg);
+		
+	}
+	#section3{
+		background:url(images/gourmet-kitchen-in-the-luxury-penthouse_Seychelle_Santa-Monica-California.jpg);
+		
+	}
+	#section3 h1{
+		color: #000;
+	}
+	#section4 {
+		background: url(images/luxury-penthouse-master-bath-at-the_Seychelle_Santa-Monica-California.jpg);	
+		
+	}
+	
+	#section5 {
+		background:url(images/seychelle-luxury-penthouse-floor-plan-9A.gif);
+		padding: 5% 0 0 0;
+	}
+	#section6 {
+		background:url(images/man-swimming-underwater-in-the-rooftop-pool_Santa-Monica-California.jpg);
+	
+	}
+	
+	#section7 {
+		background:url(images/concierge-lobby-at-the_Seychelle_Santa-Monica-California.jpg);
+		
+	}
+
+	#section8 {
+		background:url(images/man-and-woman-by-the-swimming-pool_Seychelle_Santa-Monica-California.jpg);
+	
+	}
+	
+	#section9 {
+		background:url(images/on-site-fitness-center-at-the_Seychelle_Santa-Monica-California.jpg);
+		
+	}
+
+	#section10 {
+		background:url(images/couple-toasting-champagne-glasses-by-the_Seychelle_Santa-Monica-California.jpg);
+		
+	}
+	
+	#section11 {
+		background:url(images/dog-at-the-pet-spa-by-the_Seychelle_Santa-Monica-California.jpg);
+		
+	}
+	
+	#section12 {
+		background:url(images/female-jogger-running-along-the-west-coast-by-the_Seychelle_Santa-Monica-California.jpg);
+		
+	}
+	
+	#section13 {
+		background:url(images/santa-monica-place-by-the_Seychelle_Santa-Monica-California.jpg);
+		
+	}
+	
+	#section14 {
+		background:url(images/Tongva-Park-by-the_Seychelle_Santa-Monica-California.jpg.jpg);
+		
+	}
+	
+	#section15 {
+		background:url(images/palm-trees-by-the_Seychelle_Santa-Monica-California.jpg);
+				
+	}
+
+
+
+ 	/*Adding background for the slides
+	* --------------------------------------- */
+	#slide1{
+		background:url(images/luxury-penthouse-outdoor-terrace-at-the_Seychelle_Santa-Monica-California.jpg);
+		padding: 6% 0 0 0;
+	}
+	#slide2{
+		background:url(images/pet-friendly-lobby-and-concierge-at-the_Seychelle_Santa-Monica-California.jpg);		padding: 6% 0 0 0;
+	}
+	
+	#slide3{
+		background:url(images/luxury-penthouse-living-room-at-the_Seychelle_Santa-Monica-California.jpg);		padding: 6% 0 0 0;
+	}
+
+	#section0, #section2, #section3, #section4, #section6, #section7, #section8, #section9, #section10, #section11, #section12, #section13, #section14, #section15 {
+	padding: 10% 0 0 0;
+	background-position:center !important;
+	background-size:cover !important;
+	}
+	
+	#slide1 {
+	background-position:right !important;
+	background-size:cover !important;
+	padding:0;
+	}
+	
+	#slide2, #slide3 {
+	background-position:center !important;
+	background-size:cover !important;
+	padding:0;
+	}
+	
+
+	/* Bottom menu
+	* --------------------------------------- */
+	#infoMenu li a {
+		color: #fff;
+	}
+	</style>
+
+	<!--[if IE]>
+		<script type="text/javascript">
+			 var console = { log: function() {} };
+		</script>
+	<![endif]-->
+
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+
+	<script type="text/javascript" src="jquery.fullPage.js"></script>
+	<script type="text/javascript" src="examples/examples.js"></script>
+    <script type="text/javascript" src="vendors/jquery.slimscroll.js"></script>
+
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$('#fullpage').fullpage({
+				verticalCentered: false,
+				slidesNavigation: true,
+				scrollOverflow: true
+			});
+		});
+	</script>
+
+</head>
+<body>
+
+<div id="fullpage">
+	<div class="section" id="section1">
+	    <div class="slide" id="slide1" data-anchor="slide1">
+			<div class="intro">
+				
+			</div>
+		</div>
+
+	    <div class="slide" id="slide2" data-anchor="slide2">
+				
+		</div>
+		<div class="slide" id="slide3" data-anchor="slide3">
+				
+		</div>
+	</div>
+	<div class="section " id="section0"><figure><figcaption>1,876 square feet of outdoor living with endless ocean panoramas</figcaption></figure></div>
+    
+	<div class="section" id="section2"><figcaption>Features a fireplace with dual exposures to capture the memorable ocean sunsets.</figcaption></div>
+    
+	<div class="section" id="section3"><figcaption>Open kitchen featuring appliances by Thermator<sup style="font-size:small">&reg;</sup>, including a wine refrigerator.</figcaption></div>
+
+    
+    <div class="section" id="section4"><figcaption>Modern spa-like bathroom perfect for relaxing.</figcaption></div>
+    
+    <div class="section" id="section5"><figcaption>A VIEW FROM THE TOP</figcaption></div>
+    
+    <div class="section" id="section6"><figcaption>Offering the best of coastal and city living.</figcaption></div>
+    
+    <div class="section" id="section7"><figcaption>Related Signature Services including the Related Personal Assistant, providing residents the highest level of service.</figcaption></div>
+    
+     <div class="section" id="section8"><figcaption>Rooftop pool and jacuzzi with furnished cabanas and open air barbecue areas.</figcaption></div>
+       
+     <div class="section" id="section9"><figcaption>A fully equipped fitness center and dedicated yoga studio look out onto a beautifully landscaped terrace.</figcaption></div>
+    
+     <div class="section" id="section10"><figcaption>Residents at The Seychelle will soon be able to enjoy some of Los Angeles' most cherished restaurants, right at their doorstep.</figcaption></div>
+     
+     <div class="section" id="section11"><h2>Additional Property Highlights</h2></div>
+     
+     <div class="section" id="section12"><h2>Santa Monica Beach</h2><figcaption>Covering 3.5 miles of scenic coastline, Santa Monica Beach is the epitome of California beach life. Enjoy a relaxing walk along the shore or a bike ride on the boardwalk and soak in the warmth of the sun.</figcaption></div>
+     
+          <div class="section" id="section13"><h2>Santa Monica Place</h2><figcaption>Santa Monica Place brings together 
+world-class shopping, gourmet dining and gorgeous views. From designer brands and specialty boutiques, to chef-driven restaurants to artisanal markets, Santa Monica Place perfectly captures the city’s iconic beach vibe.</figcaption></div>
+    
+     <div class="section" id="section14"><h2>Tongva Park</h2><figcaption>Named for the native people of Santa Monica, Tongva Park features rolling meadows of native grasses and wildflowers, lush pathways and panoramic views of the Pacific. The new six-acre park is designed by James Corner Field Operations, creators of New York City’s celebrated High line Park.</figcaption></div>
+     
+      <div class="section" id="section15"><h2>Learn More About The Seychelle Penthouse</h2></div>
+     
+     
+    
+    
+    
+	</div>
+</body>
+</html>

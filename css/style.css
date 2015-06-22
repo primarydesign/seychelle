@@ -1,0 +1,51 @@
+@charset "UTF-8";
+/* CSS Document */
+
+@font-face {
+    font-family: 'dtl_nobelt_light';
+    src: url('..fonts/dtlnobelt-light-webfont.eot');
+    src: url('../fonts/dtlnobelt-light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/dtlnobelt-light-webfont.woff2') format('woff2'),
+         url('../fonts/dtlnobelt-light-webfont.woff') format('woff'),
+         url('../fonts/dtlnobelt-light-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'dtl_nobelt_regular';
+    src: url('../fonts/dtlnobelt-webfont.eot');
+    src: url('../fonts/dtlnobelt-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/dtlnobelt-webfont.woff2') format('woff2'),
+         url('../fonts/dtlnobelt-webfont.woff') format('woff'),
+         url('../fonts/dtlnobelt-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+figure {
+
+}
+
+figcaption {
+font-family:'dtl_nobelt_light', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+bottom: 0 !important;
+position: absolute;
+color: rgb(255, 255, 255);
+margin: auto;
+background: rgba(0,0,0,0.5);
+width: 100%;
+line-height:1.5em;
+font-weight:200;
+letter-spacing:1px;
+padding:10px 0;
+}
+
+ @media (min-width:768px) and
+(-webkit-min-device-pixel-ratio: 1) {
+	 figcaption {
+	 line-height:2.5em;
+ }
+ }
