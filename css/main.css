@@ -1,0 +1,470 @@
+@font-face {
+  font-family: 'dtl_nobelt_light';
+  src: url("..fonts/dtlnobelt-light-webfont.eot");
+  src: url("../fonts/dtlnobelt-light-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/dtlnobelt-light-webfont.woff2") format("woff2"), url("../fonts/dtlnobelt-light-webfont.woff") format("woff"), url("../fonts/dtlnobelt-light-webfont.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'dtl_nobelt_regular';
+  src: url("../fonts/dtlnobelt-webfont.eot");
+  src: url("../fonts/dtlnobelt-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/dtlnobelt-webfont.woff2") format("woff2"), url("../fonts/dtlnobelt-webfont.woff") format("woff"), url("../fonts/dtlnobelt-webfont.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+/* line 1, ../sass/_circles.scss */
+.circle {
+  align-content: center;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  border-radius: 50%;
+  color: #fff;
+  font-family: 'DTL Nobel';
+  font-weight: 400;
+}
+/* line 13, ../sass/_circles.scss */
+.circle .inner-wrap {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  height: 95%;
+  justify-content: center;
+  text-align: center;
+  width: 95%;
+  border-radius: 50%;
+  background-image: url(../images/circles-ring-border.svg);
+  background-origin: padding-box;
+  background-size: contain;
+  background-position: center center;
+}
+/* line 29, ../sass/_circles.scss */
+.circle p:nth-child(1) {
+  font-size: .95em;
+  letter-spacing: 1.5px;
+}
+/* line 34, ../sass/_circles.scss */
+.circle p:nth-child(2) {
+  font-size: 3.4em;
+  font-weight: 600;
+  letter-spacing: 1.6px;
+}
+/* line 40, ../sass/_circles.scss */
+.circle p:nth-child(3) {
+  font-size: 1.1em;
+}
+/* line 43, ../sass/_circles.scss */
+.circle button {
+  margin-top: 20px;
+  height: 30px;
+  width: 120px;
+  background: #aa650d;
+  border: none;
+  color: #fff;
+  font-family: 'DTL Nobel';
+  font-size: .5em;
+  font-weight: 600;
+  letter-spacing: .75px;
+}
+
+/* line 1, ../sass/_backgrounds.scss */
+h1 {
+  font-size: 5em;
+  font-family: arial,helvetica;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+}
+
+/* Centered texts in each section
+* --------------------------------------- */
+/* line 10, ../sass/_backgrounds.scss */
+.section {
+  text-align: center;
+}
+
+/* Backgrounds will cover all the section
+* --------------------------------------- */
+/* line 15, ../sass/_backgrounds.scss */
+.section {
+  background-size: cover;
+}
+
+/* line 18, ../sass/_backgrounds.scss */
+.slide {
+  background-size: cover;
+}
+
+/* line 22, ../sass/_backgrounds.scss */
+#section0 {
+  background: url(../images/luxury-penthouse-outdoor-terrace_Seychelle_Santa-Monica-California.jpg);
+}
+
+/* line 25, ../sass/_backgrounds.scss */
+#section2 {
+  background: url(../images/luxury-penthouse-living-room-at-the_Seychelle_Santa-Monica-California.jpg);
+}
+
+/* line 28, ../sass/_backgrounds.scss */
+#section3 {
+  background: url(../images/gourmet-kitchen-in-the-luxury-penthouse_Seychelle_Santa-Monica-California.jpg);
+}
+
+/* line 31, ../sass/_backgrounds.scss */
+#section3 h1 {
+  color: #000;
+}
+
+/* line 34, ../sass/_backgrounds.scss */
+#section4 {
+  background: url(../images/luxury-penthouse-master-bath-at-the_Seychelle_Santa-Monica-California.jpg);
+}
+
+/* line 37, ../sass/_backgrounds.scss */
+#section5 {
+  background: url(../images/seychelle-luxury-penthouse-floor-plan-9A.gif);
+  padding: 5% 0 0 0;
+}
+
+/* line 41, ../sass/_backgrounds.scss */
+#section6 {
+  background: url(../images/man-swimming-underwater-in-the-rooftop-pool_Santa-Monica-California.jpg);
+}
+
+/* line 44, ../sass/_backgrounds.scss */
+#section7 {
+  background: url(../images/concierge-lobby-at-the_Seychelle_Santa-Monica-California.jpg);
+}
+
+/* line 47, ../sass/_backgrounds.scss */
+#section8 {
+  background: url(../images/man-and-woman-by-the-swimming-pool_Seychelle_Santa-Monica-California.jpg);
+}
+
+/* line 50, ../sass/_backgrounds.scss */
+#section9 {
+  background: url(../images/on-site-fitness-center-at-the_Seychelle_Santa-Monica-California.jpg);
+}
+
+/* line 53, ../sass/_backgrounds.scss */
+#section10 {
+  background: url(../images/couple-toasting-champagne-glasses-by-the_Seychelle_Santa-Monica-California.jpg);
+}
+
+/* line 56, ../sass/_backgrounds.scss */
+#section11 {
+  background: url(../images/dog-at-the-pet-spa-by-the_Seychelle_Santa-Monica-California.jpg);
+}
+
+/* line 59, ../sass/_backgrounds.scss */
+#section12 {
+  background: url(../images/female-jogger-running-along-the-west-coast-by-the_Seychelle_Santa-Monica-California.jpg);
+}
+
+/* line 62, ../sass/_backgrounds.scss */
+#section13 {
+  background: url(../images/santa-monica-place-by-the_Seychelle_Santa-Monica-California.jpg);
+}
+
+/* line 65, ../sass/_backgrounds.scss */
+#section14 {
+  background: url(../images/Tongva-Park-by-the_Seychelle_Santa-Monica-California.jpg.jpg);
+}
+
+/* line 68, ../sass/_backgrounds.scss */
+#section15 {
+  background: url(../images/palm-trees-by-the_Seychelle_Santa-Monica-California.jpg);
+}
+
+/* line 72, ../sass/_backgrounds.scss */
+#slide1 {
+  background: url(../images/luxury-penthouse-outdoor-terrace-at-the_Seychelle_Santa-Monica-California.jpg);
+  padding: 6% 0 0 0;
+}
+
+/* line 76, ../sass/_backgrounds.scss */
+#slide2 {
+  background: url(../images/pet-friendly-lobby-and-concierge-at-the_Seychelle_Santa-Monica-California.jpg);
+  padding: 6% 0 0 0;
+}
+
+/* line 79, ../sass/_backgrounds.scss */
+#slide3 {
+  background: url(../images/luxury-penthouse-living-room-at-the_Seychelle_Santa-Monica-California.jpg);
+  padding: 6% 0 0 0;
+}
+
+/* line 82, ../sass/_backgrounds.scss */
+#section0, #section2, #section3, #section4, #section6, #section7, #section8, #section9, #section10, #section11, #section12, #section13, #section14, #section15 {
+  padding: 10% 0 0 0;
+  background-position: center !important;
+  background-size: cover !important;
+}
+
+/* line 87, ../sass/_backgrounds.scss */
+#slide1 {
+  background-position: right !important;
+  background-size: cover !important;
+  padding: 0;
+}
+
+/* line 92, ../sass/_backgrounds.scss */
+#slide2, #slide3 {
+  background-position: center !important;
+  background-size: cover !important;
+  padding: 0;
+}
+
+/* line 98, ../sass/_backgrounds.scss */
+#infoMenu li a {
+  color: #fff;
+}
+
+/* line 5, ../sass/main.scss */
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'DTL Nobel';
+}
+
+/* line 6, ../sass/main.scss */
+a {
+  cursor: pointer;
+}
+
+/* line 10, ../sass/main.scss */
+header {
+  height: 60px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: #49423d;
+  z-index: 50;
+  text-align: center;
+}
+/* line 19, ../sass/main.scss */
+header h2 {
+  color: #fff;
+  font-weight: 300;
+  letter-spacing: 1px;
+  line-height: 60px;
+  text-transform: uppercase;
+}
+/* line 27, ../sass/main.scss */
+header .menu-wrap {
+  height: 100%;
+  position: absolute;
+  width: 100px;
+  top: 0;
+  right: 0;
+}
+/* line 34, ../sass/main.scss */
+header .menu-wrap #menu-open {
+  align-content: center;
+  align-items: center;
+  display: flex;
+  flex-flow: column;
+  height: 100%;
+  justify-content: center;
+}
+/* line 42, ../sass/main.scss */
+header .menu-wrap #menu-open div {
+  height: 2px;
+  width: 60px;
+  background: #fff;
+}
+/* line 46, ../sass/main.scss */
+header .menu-wrap #menu-open div:nth-child(-n+2) {
+  margin-bottom: 8px;
+}
+
+/* line 55, ../sass/main.scss */
+.side-wrap {
+  margin-left: 25px;
+  position: fixed;
+  width: 170px;
+  top: 0;
+  left: 0;
+  background: #a9996e;
+  z-index: 90;
+}
+/* line 63, ../sass/main.scss */
+.side-wrap #banner {
+  box-sizing: border-box;
+  padding: 10px 10px 20px;
+  width: 100%;
+  background: #edeae5;
+}
+/* line 69, ../sass/main.scss */
+.side-wrap #banner img {
+  max-width: 100%;
+}
+/* line 74, ../sass/main.scss */
+.side-wrap #sidenav {
+  padding: 45px 15px 50px;
+  color: #fff;
+  font-family: 'DTL Nobel';
+}
+/* line 79, ../sass/main.scss */
+.side-wrap #sidenav li {
+  list-style: none;
+}
+/* line 82, ../sass/main.scss */
+.side-wrap #sidenav li h3 {
+  font-weight: normal;
+  line-height: 2em;
+  text-transform: uppercase;
+}
+/* line 87, ../sass/main.scss */
+.side-wrap #sidenav li p {
+  display: none;
+}
+/* line 92, ../sass/main.scss */
+.side-wrap #sidenav li.active h3 {
+  color: #49423d;
+  font-weight: lighter;
+}
+/* line 96, ../sass/main.scss */
+.side-wrap #sidenav li.active p {
+  display: block;
+  margin: 10px 0 20px 15px;
+  font-size: 1.2em;
+  font-weight: lighter;
+  line-height: 1.4em;
+}
+
+/* line 109, ../sass/main.scss */
+#menu-overlay {
+  align-items: center;
+  display: none;
+  height: 100%;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 99;
+  background: rgba(73, 66, 61, 0.9);
+}
+/* line 122, ../sass/main.scss */
+#menu-overlay.active {
+  display: flex;
+}
+/* line 126, ../sass/main.scss */
+#menu-overlay #menu {
+  max-width: 900px;
+  width: 80%;
+}
+/* line 130, ../sass/main.scss */
+#menu-overlay #menu a {
+  color: #fff;
+  font-size: 1.5em;
+  font-weight: 200;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+/* line 137, ../sass/main.scss */
+#menu-overlay #menu a:hover {
+  color: #a9996e;
+}
+@media (min-width: 450px) {
+  /* line 130, ../sass/main.scss */
+  #menu-overlay #menu a {
+    font-size: 2em;
+  }
+}
+@media (min-width: 650px) {
+  /* line 130, ../sass/main.scss */
+  #menu-overlay #menu a {
+    font-size: 3em;
+  }
+}
+/* line 148, ../sass/main.scss */
+#menu-overlay #menu li {
+  list-style: none;
+  text-align: center;
+}
+/* line 152, ../sass/main.scss */
+#menu-overlay #menu li:nth-child(-n+4) {
+  border-bottom: 1px solid #fff;
+  padding-bottom: 20px;
+}
+/* line 156, ../sass/main.scss */
+#menu-overlay #menu li:nth-child(1n+2) {
+  margin-top: 20px;
+}
+/* line 163, ../sass/main.scss */
+#menu-overlay #menu-close {
+  height: 100px;
+  position: absolute;
+  width: 100px;
+  top: 0;
+  right: 0;
+}
+/* line 169, ../sass/main.scss */
+#menu-overlay #menu-close:before, #menu-overlay #menu-close:after {
+  content: "";
+  display: inline-block;
+  height: 2px;
+  margin: auto;
+  position: absolute;
+  width: 60px;
+  background: #fff;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+/* line 179, ../sass/main.scss */
+#menu-overlay #menu-close:before {
+  -webkit-transform: rotate(135deg);
+  -moz-transform: rotate(135deg);
+}
+/* line 183, ../sass/main.scss */
+#menu-overlay #menu-close:after {
+  -webkit-transform: rotate(-135deg);
+  -moz-transform: rotate(-135deg);
+}
+
+/* line 192, ../sass/main.scss */
+#section1 div[id^='slide'] {
+  align-content: center;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+/* line 199, ../sass/main.scss */
+#section1 .blue {
+  background: rgba(89, 130, 148, 0.9);
+}
+/* line 200, ../sass/main.scss */
+#section1 .brown {
+  background: rgba(73, 66, 61, 0.9);
+}
+/* line 202, ../sass/main.scss */
+#section1 .circle {
+  height: 300px;
+  width: 300px;
+}
+
+/* line 211, ../sass/main.scss */
+figcaption {
+  font-family: 'dtl_nobelt_light', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  bottom: 0 !important;
+  position: absolute;
+  color: white;
+  margin: auto;
+  background: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  line-height: 1.5em;
+  font-weight: 200;
+  letter-spacing: 1px;
+  padding: 10px 0;
+}
+
+@media (min-width: 768px) and (-webkit-min-device-pixel-ratio: 1) {
+  /* line 225, ../sass/main.scss */
+  figcaption {
+    line-height: 2.5em;
+  }
+}
