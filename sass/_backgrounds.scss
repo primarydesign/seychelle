@@ -1,0 +1,96 @@
+	h1{
+	font-size: 5em;
+	font-family: arial,helvetica;
+	color: #fff;
+	margin:0;
+	padding:0;
+}
+/* Centered texts in each section
+* --------------------------------------- */
+.section{
+	text-align:center;
+}
+/* Backgrounds will cover all the section
+* --------------------------------------- */
+.section{
+	background-size:cover;
+}
+.slide{
+ 	background-size:cover;
+}
+
+#section0{
+	background:url(../images/luxury-penthouse-outdoor-terrace_Seychelle_Santa-Monica-California.jpg);
+}
+#section2{
+	background:url(../images/luxury-penthouse-living-room-at-the_Seychelle_Santa-Monica-California.jpg);
+}
+#section3{
+	background:url(../images/gourmet-kitchen-in-the-luxury-penthouse_Seychelle_Santa-Monica-California.jpg);
+}
+#section3 h1{
+	color: #000;
+}
+#section4 {
+	background: url(../images/luxury-penthouse-master-bath-at-the_Seychelle_Santa-Monica-California.jpg);	
+}
+
+#section6 {
+	background:url(../images/man-swimming-underwater-in-the-rooftop-pool_Santa-Monica-California.jpg);
+}
+#section7 {
+	background:url(../images/concierge-lobby-at-the_Seychelle_Santa-Monica-California.jpg);
+}
+#section8 {
+	background:url(../images/man-and-woman-by-the-swimming-pool_Seychelle_Santa-Monica-California.jpg);
+}
+#section9 {
+	background:url(../images/on-site-fitness-center-at-the_Seychelle_Santa-Monica-California.jpg);
+}
+#section10 {
+	background:url(../images/couple-toasting-champagne-glasses-by-the_Seychelle_Santa-Monica-California.jpg);
+}
+#section11 {
+	background:url(../images/dog-at-the-pet-spa-by-the_Seychelle_Santa-Monica-California.jpg);
+}
+#section12 {
+	background:url(../images/female-jogger-running-along-the-west-coast-by-the_Seychelle_Santa-Monica-California.jpg);
+}
+#section13 {
+	background:url(../images/santa-monica-place-by-the_Seychelle_Santa-Monica-California.jpg);
+}
+#section14 {
+	background:url(../images/Tongva-Park-by-the_Seychelle_Santa-Monica-California.jpg.jpg);
+}
+#section15 {
+	background:url(../images/palm-trees-by-the_Seychelle_Santa-Monica-California.jpg);
+}
+
+#slide1{
+	background:url(../images/luxury-penthouse-outdoor-terrace-at-the_Seychelle_Santa-Monica-California.jpg);
+	padding: 6% 0 0 0;
+}
+#slide2{
+	background:url(../images/pet-friendly-lobby-and-concierge-at-the_Seychelle_Santa-Monica-California.jpg);		padding: 6% 0 0 0;
+}
+#slide3{
+	background:url(../images/luxury-penthouse-living-room-at-the_Seychelle_Santa-Monica-California.jpg);		padding: 6% 0 0 0;
+}
+#section0, #section2, #section3, #section4, #section6, #section7, #section8, #section9, #section10, #section11, #section12, #section13, #section14, #section15 {
+background-position:center !important;
+background-size:cover !important;
+}
+#slide1 {
+background-position:right !important;
+background-size:cover !important;
+padding:0;
+}
+#slide2, #slide3 {
+background-position:center !important;
+background-size:cover !important;
+padding:0;
+}
+
+#infoMenu li a {
+	color: #fff;
+}

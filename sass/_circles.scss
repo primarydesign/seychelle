@@ -1,0 +1,60 @@
+.circle {
+	align-content: center;
+	align-items: center;
+	display: flex;
+	justify-content: center;
+	position: relative;
+	
+	border-radius: 50%;
+	color: #fff;
+	font-family: 'DTL Nobel';
+	font-weight: 400;
+	
+	.inner-wrap {
+		align-items: center;
+		display: flex;
+		flex-direction: column;
+		height: 95%;
+		justify-content: center;
+		text-align: center;
+		width: 95%;
+		
+		border-radius: 50%;
+		background-image: url(../images/circles-ring-border.svg);
+		background-origin: padding-box;
+		background-size: contain;
+		background-position: center center;
+	}
+	
+	p:nth-child(1) {
+		font-size: .95em;
+		letter-spacing: 1.5px;
+	}
+	
+	p:nth-child(2) {
+		font-size: 3.4em;
+		font-weight: 600;
+		letter-spacing: 1.6px;
+	}
+	
+	p:nth-child(3) {
+		font-size: 1.1em;
+	}
+	button {
+		margin-top: 20px;
+		height: 30px;
+		width: 120px;
+		background: $orange;
+		border: none;
+		color: #fff;
+		font-family: 'DTL Nobel';
+		font-size: .5em;
+		font-weight: 600;
+		letter-spacing: .75px;
+	}
+}
+@media all and (-moz-orientation:landscape) {
+	.circle {
+		height: 100vh;
+	}
+}
