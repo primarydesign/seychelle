@@ -261,10 +261,59 @@ header {
 }
 
 .circle {
+	* {font-family: $nobel-light-stack;}
+	
+	h2 {
+		line-height: 1.25em;
+	}
+	h3 {
+		font-size: 1em;
+	}
+	
+	button {
+		font-family: $nobel-light-stack;
+		font-size: 0.75em;
+	}
 	
 	&.blue {background: $blue-trans;}
 	&.brown {background: $brown-trans;}
 	
+	@media (orientation: portrait) {
+		height: 70vw;
+		width: 70vw;
+		
+		@media (min-width:650px){
+			height: 50vw;
+			width: 50vw;
+			h3 {font-size: 1.5em;}
+		}
+	}
+	@media (orientation: landscape){
+		height: 70vh;
+		margin-top: 50px;
+		max-height: 475px;
+		max-width: 475px;
+		width: 70vh;
+		
+		@media(min-width:650px){
+			margin-top: 0;
+		}
+	}
+}
+#slide1 .circle {
+	h2 {
+		font-size: 2.50em;
+	}
+}
+#slide2 .circle {
+	h2 {
+		font-size: 2.00em;
+	}
+}
+#slide3 .circle {
+	h2 {
+		font-size: 2.25em;
+	}
 }
 
 figcaption {
