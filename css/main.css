@@ -68,6 +68,12 @@
   letter-spacing: .75px;
 }
 
+@media all and (-moz-orientation: landscape) {
+  /* line 57, ../sass/_circles.scss */
+  .circle {
+    height: 100vh;
+  }
+}
 /* line 1, ../sass/_backgrounds.scss */
 h1 {
   font-size: 5em;
@@ -197,26 +203,25 @@ h1 {
 
 /* line 82, ../sass/_backgrounds.scss */
 #section0, #section2, #section3, #section4, #section6, #section7, #section8, #section9, #section10, #section11, #section12, #section13, #section14, #section15 {
-  padding: 10% 0 0 0;
   background-position: center !important;
   background-size: cover !important;
 }
 
-/* line 87, ../sass/_backgrounds.scss */
+/* line 86, ../sass/_backgrounds.scss */
 #slide1 {
   background-position: right !important;
   background-size: cover !important;
   padding: 0;
 }
 
-/* line 92, ../sass/_backgrounds.scss */
+/* line 91, ../sass/_backgrounds.scss */
 #slide2, #slide3 {
   background-position: center !important;
   background-size: cover !important;
   padding: 0;
 }
 
-/* line 98, ../sass/_backgrounds.scss */
+/* line 97, ../sass/_backgrounds.scss */
 #infoMenu li a {
   color: #fff;
 }
@@ -225,7 +230,7 @@ h1 {
 * {
   margin: 0;
   padding: 0;
-  font-family: 'DTL Nobel';
+  font-family: 'dtl_nobelt_regular';
 }
 
 /* line 6, ../sass/main.scss */
@@ -233,7 +238,7 @@ a {
   cursor: pointer;
 }
 
-/* line 10, ../sass/main.scss */
+/* line 8, ../sass/main.scss */
 header {
   height: 60px;
   position: fixed;
@@ -243,7 +248,7 @@ header {
   z-index: 50;
   text-align: center;
 }
-/* line 19, ../sass/main.scss */
+/* line 17, ../sass/main.scss */
 header h2 {
   color: #fff;
   font-weight: 300;
@@ -251,7 +256,7 @@ header h2 {
   line-height: 60px;
   text-transform: uppercase;
 }
-/* line 27, ../sass/main.scss */
+/* line 25, ../sass/main.scss */
 header .menu-wrap {
   height: 100%;
   position: absolute;
@@ -259,7 +264,7 @@ header .menu-wrap {
   top: 0;
   right: 0;
 }
-/* line 34, ../sass/main.scss */
+/* line 32, ../sass/main.scss */
 header .menu-wrap #menu-open {
   align-content: center;
   align-items: center;
@@ -268,19 +273,20 @@ header .menu-wrap #menu-open {
   height: 100%;
   justify-content: center;
 }
-/* line 42, ../sass/main.scss */
+/* line 40, ../sass/main.scss */
 header .menu-wrap #menu-open div {
   height: 2px;
   width: 60px;
   background: #fff;
 }
-/* line 46, ../sass/main.scss */
+/* line 44, ../sass/main.scss */
 header .menu-wrap #menu-open div:nth-child(-n+2) {
   margin-bottom: 8px;
 }
 
-/* line 55, ../sass/main.scss */
+/* line 53, ../sass/main.scss */
 .side-wrap {
+  display: none;
   margin-left: 25px;
   position: fixed;
   width: 170px;
@@ -289,43 +295,43 @@ header .menu-wrap #menu-open div:nth-child(-n+2) {
   background: #a9996e;
   z-index: 90;
 }
-/* line 63, ../sass/main.scss */
+/* line 62, ../sass/main.scss */
 .side-wrap #banner {
   box-sizing: border-box;
   padding: 10px 10px 20px;
   width: 100%;
   background: #edeae5;
 }
-/* line 69, ../sass/main.scss */
+/* line 68, ../sass/main.scss */
 .side-wrap #banner img {
   max-width: 100%;
 }
-/* line 74, ../sass/main.scss */
+/* line 73, ../sass/main.scss */
 .side-wrap #sidenav {
   padding: 45px 15px 50px;
   color: #fff;
   font-family: 'DTL Nobel';
 }
-/* line 79, ../sass/main.scss */
+/* line 78, ../sass/main.scss */
 .side-wrap #sidenav li {
   list-style: none;
 }
-/* line 82, ../sass/main.scss */
+/* line 81, ../sass/main.scss */
 .side-wrap #sidenav li h3 {
   font-weight: normal;
   line-height: 2em;
   text-transform: uppercase;
 }
-/* line 87, ../sass/main.scss */
+/* line 86, ../sass/main.scss */
 .side-wrap #sidenav li p {
   display: none;
 }
-/* line 92, ../sass/main.scss */
+/* line 91, ../sass/main.scss */
 .side-wrap #sidenav li.active h3 {
   color: #49423d;
   font-weight: lighter;
 }
-/* line 96, ../sass/main.scss */
+/* line 95, ../sass/main.scss */
 .side-wrap #sidenav li.active p {
   display: block;
   margin: 10px 0 20px 15px;
@@ -334,7 +340,7 @@ header .menu-wrap #menu-open div:nth-child(-n+2) {
   line-height: 1.4em;
 }
 
-/* line 109, ../sass/main.scss */
+/* line 107, ../sass/main.scss */
 #menu-overlay {
   align-items: center;
   display: none;
@@ -346,16 +352,16 @@ header .menu-wrap #menu-open div:nth-child(-n+2) {
   z-index: 99;
   background: rgba(73, 66, 61, 0.9);
 }
-/* line 122, ../sass/main.scss */
+/* line 120, ../sass/main.scss */
 #menu-overlay.active {
   display: flex;
 }
-/* line 126, ../sass/main.scss */
+/* line 124, ../sass/main.scss */
 #menu-overlay #menu {
   max-width: 900px;
   width: 80%;
 }
-/* line 130, ../sass/main.scss */
+/* line 128, ../sass/main.scss */
 #menu-overlay #menu a {
   color: #fff;
   font-size: 1.5em;
@@ -363,37 +369,37 @@ header .menu-wrap #menu-open div:nth-child(-n+2) {
   text-decoration: none;
   text-transform: uppercase;
 }
-/* line 137, ../sass/main.scss */
+/* line 135, ../sass/main.scss */
 #menu-overlay #menu a:hover {
   color: #a9996e;
 }
 @media (min-width: 450px) {
-  /* line 130, ../sass/main.scss */
+  /* line 128, ../sass/main.scss */
   #menu-overlay #menu a {
     font-size: 2em;
   }
 }
 @media (min-width: 650px) {
-  /* line 130, ../sass/main.scss */
+  /* line 128, ../sass/main.scss */
   #menu-overlay #menu a {
     font-size: 3em;
   }
 }
-/* line 148, ../sass/main.scss */
+/* line 146, ../sass/main.scss */
 #menu-overlay #menu li {
   list-style: none;
   text-align: center;
 }
-/* line 152, ../sass/main.scss */
+/* line 150, ../sass/main.scss */
 #menu-overlay #menu li:nth-child(-n+4) {
   border-bottom: 1px solid #fff;
   padding-bottom: 20px;
 }
-/* line 156, ../sass/main.scss */
+/* line 154, ../sass/main.scss */
 #menu-overlay #menu li:nth-child(1n+2) {
   margin-top: 20px;
 }
-/* line 163, ../sass/main.scss */
+/* line 161, ../sass/main.scss */
 #menu-overlay #menu-close {
   height: 100px;
   position: absolute;
@@ -401,7 +407,7 @@ header .menu-wrap #menu-open div:nth-child(-n+2) {
   top: 0;
   right: 0;
 }
-/* line 169, ../sass/main.scss */
+/* line 167, ../sass/main.scss */
 #menu-overlay #menu-close:before, #menu-overlay #menu-close:after {
   content: "";
   display: inline-block;
@@ -415,39 +421,35 @@ header .menu-wrap #menu-open div:nth-child(-n+2) {
   bottom: 0;
   left: 0;
 }
-/* line 179, ../sass/main.scss */
+/* line 177, ../sass/main.scss */
 #menu-overlay #menu-close:before {
   -webkit-transform: rotate(135deg);
   -moz-transform: rotate(135deg);
 }
-/* line 183, ../sass/main.scss */
+/* line 181, ../sass/main.scss */
 #menu-overlay #menu-close:after {
   -webkit-transform: rotate(-135deg);
   -moz-transform: rotate(-135deg);
 }
 
-/* line 192, ../sass/main.scss */
+/* line 190, ../sass/main.scss */
 #section1 div[id^='slide'] {
   align-content: center;
   align-items: center;
   display: flex;
   justify-content: center;
 }
-/* line 199, ../sass/main.scss */
-#section1 .blue {
+
+/* line 200, ../sass/main.scss */
+.circle .blue {
   background: rgba(89, 130, 148, 0.9);
 }
-/* line 200, ../sass/main.scss */
-#section1 .brown {
+/* line 201, ../sass/main.scss */
+.circle .brown {
   background: rgba(73, 66, 61, 0.9);
 }
-/* line 202, ../sass/main.scss */
-#section1 .circle {
-  height: 300px;
-  width: 300px;
-}
 
-/* line 211, ../sass/main.scss */
+/* line 205, ../sass/main.scss */
 figcaption {
   font-family: 'dtl_nobelt_light', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   bottom: 0 !important;
@@ -461,9 +463,8 @@ figcaption {
   letter-spacing: 1px;
   padding: 10px 0;
 }
-
-@media (min-width: 768px) and (-webkit-min-device-pixel-ratio: 1) {
-  /* line 225, ../sass/main.scss */
+@media (min-width: 768px) and (-webkit-device-pixel-ratio: 1) {
+  /* line 205, ../sass/main.scss */
   figcaption {
     line-height: 2.5em;
   }
