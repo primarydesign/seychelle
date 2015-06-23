@@ -10,11 +10,10 @@
 	<meta name="Resource-type" content="Document" />
 	
 	<link rel="stylesheet" type="text/css" href="css/reset.css" /> 
-	<link rel="stylesheet" type="text/css" href="jquery.fullPage.css" />
+	<link rel="stylesheet" type="text/css" href="vendors/fullpage/jquery.fullPage.css" />
 	<link rel="stylesheet" type="text/css" href="css/style.css" />
 	<link rel="stylesheet" type="text/css" href="css/main.css" />
 	
-
 	<!--[if IE]>
 		<script type="text/javascript">
 			 var console = { log: function() {} };
@@ -24,34 +23,10 @@
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
 	<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
 	
-	<script type="text/javascript" src="jquery.fullPage.js"></script>
-	<script type="text/javascript" src="examples/examples.js"></script>
-	<script type="text/javascript" src="vendors/jquery.slimscroll.js"></script>
+	<script type="text/javascript" src="vendors/fullpage/jquery.fullPage.js"></script>
+	<script type="text/javascript" src="vendors/fullpage/vendors/jquery.slimscroll.js"></script>
+	<script type="text/javascript" src="javascript/main.js"></script>
 	
-	<script type="text/javascript">
-		$(document).ready(function() {
-			$('#fullpage').fullpage({
-				verticalCentered: false,
-				slidesNavigation: true,
-				scrollOverflow: true
-			});
-			//MENU ACTIVATION
-			$('#menu-close, #menu a').click(function(){
-				$('#menu-overlay').removeClass('active');
-			});
-			$('#menu-open').click(function(){
-				$('#menu-overlay').addClass('active');
-			});
-			//MENU NAVLINKS
-			$('#menu a, #sidenav li a').click(function(){
-				var $to = $(this).attr('id');
-				$to = $to.replace('toSect','');
-				$to = parseInt($to);
-				$.fn.fullpage.silentMoveTo($to);
-			});
-		});
-	</script>
-
 </head>
 <body>
 
