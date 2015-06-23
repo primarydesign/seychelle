@@ -262,8 +262,8 @@ header {
 
 .circle {
 	
-	.blue {background: $blue-trans;}
-	.brown {background: $brown-trans;}
+	&.blue {background: $blue-trans;}
+	&.brown {background: $brown-trans;}
 	
 }
 
@@ -285,20 +285,22 @@ figcaption {
 	}
 }
 
-.fp-controlArrows {
+.fp-controlArrow {
 	
 	@media (orientation: portrait) {
-		display: none;
+		display: none !important;
 		
 		@media (min-width:650px){
 			display: block;
 		}
 	}
 	@media (orientation: landscape){
-		transform: scale(.75,.75);
-		
+		transform: scale(0.5,0.5)
+			translateY(50%);
+			
 		@media(min-width:650px){
-			transform: scale(1,1);
+			transform:  scale(1, 1)
+				translateY(50%)!important;
 		}
 	}
 }
