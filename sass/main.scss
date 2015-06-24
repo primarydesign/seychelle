@@ -77,11 +77,20 @@ header {
 		font-family: 'nobel-light-stack';
 		
 		li {
+			margin: 6px 0;
+			font-size: .95em;
+			text-transform: uppercase;
+			
 			ul {
 				display: none;
 				
 				li {
-					margin-left: 10px;
+					margin: 0 0 0 10px;
+					font-size: 1em;
+					text-transform: capitalize;
+					&:first-of-type {
+						margin-top: 3px;
+					}
 				}
 			}
 		}
