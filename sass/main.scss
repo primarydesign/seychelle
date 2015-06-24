@@ -118,7 +118,7 @@ header {
 	position: fixed;
 	top: 0;
 	width: 100%;
-	z-index: 90;
+	z-index: 85;
 	
 	background: $brown-trans;
 	
@@ -188,7 +188,7 @@ header {
 	}
 	
 	#open-terms {
-		padding-bottom:5px;
+		padding-bottom:10px;
 		position: absolute;
 		width:100%;
 		bottom:0;left:0;
@@ -201,52 +201,67 @@ header {
 	}
 }
 
-#terms {
+.terms-wrapper {
+	align-content: center;
+	align-items: center;
+	display: none;
+	flex-flow: column nowrap;
 	height: 100%;
+	justify-content: center;
 	left:0;
 	position: fixed;
-	top: 0;
+	top:0;
 	width: 100%;
 	z-index: 90;
-	background: #eaeaea;
-	font-family: $nobel-light-stack;
-	#close-terms {
-		display: inline-block;
-		height: 40px;
+	background: rgba(0,0,0,.5); //temp
+	
+	.terms-box {
+		height: 100%;
+		width: 100%;
 		position: relative;
-		width: 100%;
-		background: $orange;
-		line-height: 40px;
-		text-align: center;
-		text-transform: uppercase;
+		
+		#close-terms {
+			display: inline-block;
+			height: 40px;
+			top:0;
+			width: 100%;
+			background: $orange;
+			line-height: 40px;
+			text-align: center;
+			text-transform: uppercase;
+		}
+		#terms {
+			box-sizing: border-box;
+			height:100%;
+			overflow-y: scroll;
+			padding: 0 20px 20px;
+			width: 100%;
+			background: #eee;
+			h2 {
+				line-height: 40px;
+				text-align: center;
+			}
+			p {
+				font-family: $nobel-light-stack;
+				font-size: 0.8em;
+				line-height: 1.1em;
+				text-align: justify;
+				padding-bottom: 10px;
+			}
+			strong {
+				color: $orange;
+				font-weight: bold;
+			}
+		}
+		@media (min-width:700px){
+			height: 80%;
+			max-height: 500px;
+			max-width: 700px;
+			width: 70%;
+		}
 	}
-	.text-wrapper {
-		box-sizing: border-box;
-		height: -moz-calc(100% - 40px);
-		overflow-y: scroll;
-		padding: 0 20px;
-		width: 100%;
-	}
-	h2 {
-		line-height: 40px;
-		text-align: center;
-	}
-	p {
-		font-family: $nobel-light-stack;
-		font-size: 0.8em;
-		line-height: 1.1em;
-		text-align: justify;
-		padding-bottom: 10px;
-	}
-	strong {
-		color: $orange;
-		font-weight: bold;
-	}
-	@media (min-width: 900px){
-		height: 80%;
-		width: 70%;
-		margin: auto;
-		top:0;right:0;bottom:0;left:0;
+	&.active {
+		display: flex !important;
 	}
 }
 
