@@ -37,6 +37,10 @@ $(document).ready(function() {
 		$.fn.fullpage.setAllowScrolling(true);
 		$.fn.fullpage.setKeyboardScrolling(true);
 	});
+	//BANNER TO TOP
+	$('#banner img').click(function(){
+		$.fn.fullpage.moveTo(1);
+	});
 	//DYNAMIC HEADER TEXT
 	var sections = [
 		{
