@@ -3,7 +3,7 @@
 body {
 	-moz-osx-font-smoothing: grayscale;
 	font-smoothing: grayscale;
-	-webkit-font-smoothing: grayscale;
+	-webkit-font-smoothing: antialiased;
 }
 
 @font-face {
@@ -47,6 +47,8 @@ h2 {
 header h2 {
 	text-align:center;
 	line-height:10px !important;	
+	font-size: 1em !important;
+	padding: 1.5em 0px !important;
 }
 
 h3 {
@@ -55,24 +57,27 @@ h3 {
 }
 
 p {
-	font-family: 'dtl_nobelt_light';
+	font-family:'dtl_nobelt_regular', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 	font-size:1em;
 	text-align:left;
 	line-height:1.4em;
 	letter-spacing:0px;
-	
+}
+
+.dining-info p {
+font-family:'dtl_nobelt_light', 'Helvetica Neue', Helvetica, Arial, sans-serif !important;	
 }
 sup {
 	font-size:small;
 }
 
 figcaption {
-	font-family:'dtl_nobelt_light', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-family:'dtl_nobelt_regular', 'Helvetica Neue', Helvetica, Arial, sans-serif !important;
 	bottom: 0 !important;
 	position: absolute;
 	color: rgb(255, 255, 255);
 	margin: auto;
-	background: rgba(0,0,0,0.5);
+	background: rgba(0,0,0,0.6);
 	width: 100%;
 	line-height:1.5em;
 	font-weight:200;
@@ -121,7 +126,8 @@ button {
 	padding:10px 20px;
 	margin:30px 0;
 	border:none;
-	color:#ffffff;	
+	color:#ffffff;
+	border-radius: 2px;
 }
 
 /* Property Features */
@@ -138,8 +144,8 @@ button {
 
 /* Dining Section */
 
-.dining-info h2, .property-features h2, .highlights h2 {
-	padding-top:100px;	
+.dining-info h2, .property-features h2, .highlights h2, .contact h2 {
+	padding-top:150px;	
 }
 
 .dining-info, .property-features, .highlights {
@@ -147,13 +153,13 @@ button {
 	background: rgba(73,66,60,0.7);
 }
 
-@media (min-width: 501px) {
+@media (min-width: 1001px) {
 .dining-info  {
 	height:100%;	
 }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 1000px) {
 .dining-info  {
 	padding-bottom:100px;	
 }
@@ -186,13 +192,56 @@ button {
 	padding:10px 0;
 }
 
-.place figcaption {
-	font-family:'dtl_nobelt_regular', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-}
-
- @media (min-width:768px) and
+ @media (min-width:960px) and
 (-webkit-min-device-pixel-ratio: 1) {
 	 figcaption {
 	 line-height:2.5em;
  }
+ }
+ 
+ /* Non-mobile queries */
+ 
+
+ @media (min-width:700px) {
+
+.highlights, .floor-plan, .property-features, .dining-info {
+	padding-left: 250px;
+	padding-right: 50px;
+ }
+ 
+ }
+ 
+  @media (min-width:1000px) {
+
+.highlights, .floor-plan, .property-features {
+	padding-left: 250px;
+	padding-right: 250px;
+ }
+ 
+ .dining-info {
+	padding-left: 250px;
+	padding-right: 200px;
+ }
+
+	  
+.property-features p {
+    font-size: 1.5em;
+    line-height: 1.6em;	 
+ }
+ 	 
+ }
+ 
+ @media (min-width:700px) and (max-width:1599px) {
+	  .contact {
+		 padding: 0 50px 0 250px;
+	 }
+ }
+ 
+ @media (min-width:1600px) {
+	 .contact {
+		 padding: 0 250px;
+	 }
+.dining-info p {
+		 font-size: 1.2em;
+	 }
  }

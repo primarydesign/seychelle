@@ -13,6 +13,7 @@
 	<link rel="stylesheet" type="text/css" href="vendors/fullpage/jquery.fullPage.css" />
 	<link rel="stylesheet" type="text/css" href="css/style.css" />
 	<link rel="stylesheet" type="text/css" href="css/main.css" />
+    <link rel="stylesheet" type="text/css" href="css/form.css" />
 	
 	<!--[if IE]>
 		<script type="text/javascript">
@@ -23,6 +24,8 @@
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
 	<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
 	
+	<script type="text/javascript" src="vendors/waypoints/lib/noframework.waypoints.min.js"></script>
+	<script type="text/javascript" src="vendors/waypoints/lib/jquery.waypoints.min.js"></script>
 	<script type="text/javascript" src="vendors/fullpage/jquery.fullPage.js"></script>
 	<script type="text/javascript" src="vendors/fullpage/vendors/jquery.slimscroll.js"></script>
 	<script type="text/javascript" src="javascript/main.js"></script>
@@ -128,12 +131,33 @@
 		<div class="section" id="section14"><figcaption class="place">
         <h3>Tongva Park</h3>
         Named for the native people of Santa Monica, Tongva Park features rolling meadows of native grasses and wildflowers, lush pathways and panoramic views of the Pacific. The new six-acre park is designed by James Corner Field Operations, creators of New York City’s celebrated High line Park.</figcaption></div>
-		<div class="section" id="section15"><h2>Learn More About The Seychelle Penthouse</h2></div>
+		<div class="section" id="section15"><div class="contact">
+        	<h2>Learn More About The Seychelle Penthouse</h2>
+        		<form action="form.php" method="post" class="cbp-mc-form">
+					<div class="cbp-mc-column">
+						<label for="first_name">First Name</label>
+	  					<input type="text" id="first_name" name="first_name">
+	  					<label for="last_name">Last Name</label>
+	  					<input type="text" id="last_name" name="last_name">
+                        </div>
+				<div class="cbp-mc-column">
+                    	<label for="email">Email Address</label>
+	  					<input type="text" id="email" name="email">
+	  					<label for="phone">Phone Number</label>
+	  					<input type="text" id="phone" name="phone">		
+	  			</div>
+                <div class="cbp-mc-column">
+	  				 <label for="message">Message</label>
+	  				<textarea id="message" name="message"></textarea>
+                </div>
+	  				<div class="cbp-mc-submit-wrap"><input class="cbp-mc-submit" type="submit" value="Send your data" /></div>
+				</form>
+           </div></div>
 	</div>
 </main>
 
 <header>
-	<h2>Penthouse 901</h2>
+	<h2  id="htext">Penthouse 901</h2>
 	<div class="menu-wrap">
 		<a id="menu-open">
 			<div></div>
@@ -151,28 +175,31 @@
 	
 	<nav id="sidenav">
 		<ul>
-			<li><a id="toSect02">Penthouse</a></li>
+			<li><a class="toSect2">Penthouse</a>
 				<ul>
-					<li><a id="toSect02">Terrace</a></li>
-					<li><a id="toSect03">Great Room</a></li>
-					<li><a id="toSect04">Kitchen</a></li>
+					<li><a class="toSect2">Terrace</a></li>
+					<li><a class="toSect3">Great Room</a></li>
+					<li><a class="toSect4">Kitchen</a></li>
 				</ul>
-			<li><a id="toSect05">Floor Plan</a></li>
-			<li><a id="toSect06">Property Features</a></li>
+			</li>
+			<li><a class="toSect5">Floor Plan</a></li>
+			<li><a class="toSect6">Property Features</a>
 				<ul>
-					<li><a id="toSect07">Service</a></li>
-					<li><a id="toSect08">Pool</a></li>
-					<li><a id="toSect09">Fitness</a></li>
-					<li><a id="toSect10">Dining</a></li>
-					<li><a id="toSect11">More</a></li>
+					<li><a class="toSect7">Service</a></li>
+					<li><a class="toSect8">Pool</a></li>
+					<li><a class="toSect9">Fitness</a></li>
+					<li><a class="toSect10">Dining</a></li>
+					<li><a class="toSect11">More</a></li>
 				</ul>
-			<li><a id="toSect12">Neighborhood</a></li>
+			</li>
+			<li><a class="toSect12">Neighborhood</a>
 				<ul>
-					<li><a id="toSect12">Santa Monica Beach</a></li>
-					<li><a id="toSect13">Santa Monica Place</a></li>
-					<li><a id="toSect14">Tongva Park</a></li>
+					<li><a class="toSect12">Santa Monica Beach</a></li>
+					<li><a class="toSect13">Santa Monica Place</a></li>
+					<li><a class="toSect14">Tongva Park</a></li>
 				</ul>
-			<li><a id="toSect15">Contact</a></li>
+			</li>
+			<li><a class="toSect15">Contact</a></li>
 		</ul>
 	</nav>
 	
@@ -187,11 +214,11 @@
 	
 	<nav id="menu">
 		<ul>
-			<li><a id="toSect02">The Penthouse</a></li>
-			<li><a id="toSect05">Floor Plan</a></li>
-			<li><a id="toSect06">Property Features</a></li>
-			<li><a id="toSect12">Neighborhood</a></li>
-			<li><a id="toSect16">Contact</a></li>
+			<li><a class="toSect02">The Penthouse</a></li>
+			<li><a class="toSect05">Floor Plan</a></li>
+			<li><a class="toSect06">Property Features</a></li>
+			<li><a class="toSect12">Neighborhood</a></li>
+			<li><a class="toSect15">Contact</a></li>
 		</ul>
 	</nav>
 	

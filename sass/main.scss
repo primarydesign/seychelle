@@ -74,36 +74,26 @@ header {
 	#sidenav {
 		padding: 45px 15px 50px;
 		color: #fff;
-		font-family: 'DTL Nobel';
+		font-family: 'nobel-light-stack';
 		
-		li{
-			list-style: none;
-			
-			h3 {
-				font-weight: normal;
-				line-height: 2em;
-				text-transform: uppercase;
-			}
-			p {
+		li {
+			ul {
 				display: none;
-			}
-			
-			&.active {
-				h3 {
-					color: $brown;
-					font-weight: lighter;
-				}
-				p {
-					display: block;
-					margin: 10px 0 20px 15px;
-					font-size: 1.2em;
-					font-weight: lighter;
-					line-height: 1.4em;
+				
+				li {
+					margin-left: 10px;
 				}
 			}
-		}	
+		}
+		
+		.active {
+			color:$brown;
+			& + ul {
+				display: block;
+			}
+		}
 	}
-	@media (min-width:1000px){
+	@media (min-width:700px){
 		display: block;
 	}
 }

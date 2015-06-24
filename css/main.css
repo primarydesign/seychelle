@@ -299,34 +299,29 @@ header .menu-wrap #menu-open div:nth-child(-n+2) {
 .side-wrap #sidenav {
   padding: 45px 15px 50px;
   color: #fff;
-  font-family: 'DTL Nobel';
+  font-family: 'nobel-light-stack';
 }
-/* line 79, ../sass/main.scss */
-.side-wrap #sidenav li {
-  list-style: none;
-}
-/* line 82, ../sass/main.scss */
-.side-wrap #sidenav li h3 {
-  font-weight: normal;
-  line-height: 2em;
-  text-transform: uppercase;
-}
-/* line 87, ../sass/main.scss */
-.side-wrap #sidenav li p {
+/* line 80, ../sass/main.scss */
+.side-wrap #sidenav li ul {
   display: none;
 }
-/* line 92, ../sass/main.scss */
-.side-wrap #sidenav li.active h3 {
-  color: #49423d;
-  font-weight: lighter;
+/* line 83, ../sass/main.scss */
+.side-wrap #sidenav li ul li {
+  margin-left: 10px;
 }
-/* line 96, ../sass/main.scss */
-.side-wrap #sidenav li.active p {
+/* line 89, ../sass/main.scss */
+.side-wrap #sidenav .active {
+  color: #49423d;
+}
+/* line 91, ../sass/main.scss */
+.side-wrap #sidenav .active + ul {
   display: block;
-  margin: 10px 0 20px 15px;
-  font-size: 1.2em;
-  font-weight: lighter;
-  line-height: 1.4em;
+}
+@media (min-width: 700px) {
+  /* line 54, ../sass/main.scss */
+  .side-wrap {
+    display: block;
+  }
 }
 @media (min-width: 1000px) {
   /* line 54, ../sass/main.scss */
@@ -353,6 +348,7 @@ header .menu-wrap #menu-open div:nth-child(-n+2) {
   display: flex;
 }
 /* line 129, ../sass/main.scss */
+
 #menu-overlay #menu {
   max-width: 900px;
   width: 80%;
@@ -376,12 +372,12 @@ header .menu-wrap #menu-open div:nth-child(-n+2) {
   }
 }
 @media (min-width: 650px) {
-  /* line 133, ../sass/main.scss */
+  /* line 123, ../sass/main.scss */
   #menu-overlay #menu a {
     font-size: 3em;
   }
 }
-/* line 151, ../sass/main.scss */
+/* line 141, ../sass/main.scss */
 #menu-overlay #menu li {
   list-style: none;
   text-align: center;
@@ -612,7 +608,6 @@ figcaption {
   padding: 10px 0;
 }
 @media (min-width: 768px) and (-webkit-device-pixel-ratio: 1) {
-<<<<<<< HEAD
   /* line 285, ../sass/main.scss */
   figcaption {
     line-height: 2.5em;
