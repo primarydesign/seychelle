@@ -358,3 +358,21 @@ figcaption {
 		}
 	}
 }
+
+.fp-slidesNav {
+	align-items: 0;
+	display: flex;
+	flex-flow: row nowrap;
+	a {
+		span {
+			background: rgba(0,0,0,0) !important;
+			border: 2px solid #fff !important;
+			height: 10px !important;
+			margin: 0 !important;
+			width: 10px !important;
+		}
+		&.active span, &:hover span {
+			background: #fff !important;
+		}
+	}
+}
