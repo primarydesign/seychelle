@@ -20,7 +20,11 @@ $(document).ready(function() {
 		var $to = $(this).attr('class');
 		$to = $to.replace('toSect','');
 		$to = parseInt($to);
-		$.fn.fullpage.silentMoveTo($to);
+		$.fn.fullpage.moveTo($to);
+	});
+	//CONTACT BUTTONS
+	$('.contact-btn').click(function(){
+		$.fn.fullpage.moveTo(15);
 	});
 	//TERMS OF USE
 	$('#open-terms').click(function(){
