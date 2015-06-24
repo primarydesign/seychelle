@@ -45,21 +45,6 @@
   background-position: center center;
 }
 /* line 29, ../sass/_circles.scss */
-.circle p:nth-child(1) {
-  font-size: .95em;
-  letter-spacing: 1.5px;
-}
-/* line 34, ../sass/_circles.scss */
-.circle p:nth-child(2) {
-  font-size: 3.4em;
-  font-weight: 600;
-  letter-spacing: 1.6px;
-}
-/* line 40, ../sass/_circles.scss */
-.circle p:nth-child(3) {
-  font-size: 1.1em;
-}
-/* line 43, ../sass/_circles.scss */
 .circle button {
   margin-top: 20px;
   height: 30px;
@@ -74,7 +59,7 @@
 }
 
 @media all and (-moz-orientation: landscape) {
-  /* line 57, ../sass/_circles.scss */
+  /* line 43, ../sass/_circles.scss */
   .circle {
     height: 100vh;
   }
@@ -537,17 +522,82 @@ header .menu-wrap #menu-open div:nth-child(-n+2) {
   display: flex;
   justify-content: center;
 }
-
-/* line 280, ../sass/main.scss */
-.circle .blue {
+/* line 264, ../sass/main.scss */
+.circle * {
+  font-family: "dtl_nobelt_light", sans-serif;
+}
+/* line 266, ../sass/main.scss */
+.circle h2 {
+  line-height: 1.25em;
+}
+/* line 269, ../sass/main.scss */
+.circle h3 {
+  font-size: 1em;
+}
+/* line 273, ../sass/main.scss */
+.circle button {
+  font-family: "dtl_nobelt_light", sans-serif;
+  font-size: 0.75em;
+}
+/* line 278, ../sass/main.scss */
+.circle.blue {
   background: rgba(89, 130, 148, 0.9);
 }
-/* line 281, ../sass/main.scss */
-.circle .brown {
+/* line 279, ../sass/main.scss */
+.circle.brown {
   background: rgba(73, 66, 61, 0.9);
 }
+@media (orientation: portrait) {
+  /* line 263, ../sass/main.scss */
+  .circle {
+    height: 70vw;
+    width: 70vw;
+  }
+}
+@media (orientation: portrait) and (min-width: 650px) {
+  /* line 263, ../sass/main.scss */
+  .circle {
+    height: 50vw;
+    width: 50vw;
+  }
+  /* line 288, ../sass/main.scss */
+  .circle h3 {
+    font-size: 1.5em;
+  }
+}
 
-/* line 285, ../sass/main.scss */
+@media (orientation: landscape) {
+  /* line 263, ../sass/main.scss */
+  .circle {
+    height: 70vh;
+    margin-top: 50px;
+    max-height: 475px;
+    max-width: 475px;
+    width: 70vh;
+  }
+}
+@media (orientation: landscape) and (min-width: 650px) {
+  /* line 263, ../sass/main.scss */
+  .circle {
+    margin-top: 0;
+  }
+}
+
+/* line 304, ../sass/main.scss */
+#slide1 .circle h2 {
+  font-size: 2.50em;
+}
+
+/* line 309, ../sass/main.scss */
+#slide2 .circle h2 {
+  font-size: 2.00em;
+}
+
+/* line 314, ../sass/main.scss */
+#slide3 .circle h2 {
+  font-size: 2.25em;
+}
+/* line 319, ../sass/main.scss */
 figcaption {
   font-family: 'dtl_nobelt_light', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   bottom: 0 !important;
@@ -562,6 +612,7 @@ figcaption {
   padding: 10px 0;
 }
 @media (min-width: 768px) and (-webkit-device-pixel-ratio: 1) {
+<<<<<<< HEAD
   /* line 285, ../sass/main.scss */
   figcaption {
     line-height: 2.5em;
@@ -569,27 +620,27 @@ figcaption {
 }
 
 @media (orientation: portrait) {
-  /* line 303, ../sass/main.scss */
-  .fp-controlArrows {
-    display: none;
+  /* line 337, ../sass/main.scss */
+  .fp-controlArrow {
+    display: none !important;
   }
 }
 @media (orientation: portrait) and (min-width: 650px) {
-  /* line 303, ../sass/main.scss */
-  .fp-controlArrows {
+  /* line 337, ../sass/main.scss */
+  .fp-controlArrow {
     display: block;
   }
 }
 
 @media (orientation: landscape) {
-  /* line 303, ../sass/main.scss */
-  .fp-controlArrows {
-    transform: scale(0.75, 0.75);
+  /* line 337, ../sass/main.scss */
+  .fp-controlArrow {
+    transform: scale(0.5, 0.5) translateY(50%);
   }
 }
 @media (orientation: landscape) and (min-width: 650px) {
-  /* line 303, ../sass/main.scss */
-  .fp-controlArrows {
-    transform: scale(1, 1);
+  /* line 337, ../sass/main.scss */
+  .fp-controlArrow {
+    transform: scale(1, 1) translateY(50%) !important;
   }
 }

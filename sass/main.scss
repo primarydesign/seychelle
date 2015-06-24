@@ -276,10 +276,59 @@ header {
 }
 
 .circle {
+	* {font-family: $nobel-light-stack;}
 	
-	.blue {background: $blue-trans;}
-	.brown {background: $brown-trans;}
+	h2 {
+		line-height: 1.25em;
+	}
+	h3 {
+		font-size: 1em;
+	}
 	
+	button {
+		font-family: $nobel-light-stack;
+		font-size: 0.75em;
+	}
+	
+	&.blue {background: $blue-trans;}
+	&.brown {background: $brown-trans;}
+	
+	@media (orientation: portrait) {
+		height: 70vw;
+		width: 70vw;
+		
+		@media (min-width:650px){
+			height: 50vw;
+			width: 50vw;
+			h3 {font-size: 1.5em;}
+		}
+	}
+	@media (orientation: landscape){
+		height: 70vh;
+		margin-top: 50px;
+		max-height: 475px;
+		max-width: 475px;
+		width: 70vh;
+		
+		@media(min-width:650px){
+			margin-top: 0;
+		}
+	}
+}
+#slide1 .circle {
+	h2 {
+		font-size: 2.50em;
+	}
+}
+#slide2 .circle {
+	h2 {
+		font-size: 2.00em;
+	}
+}
+#slide3 .circle {
+	h2 {
+		font-size: 2.25em;
+	}
 }
 
 figcaption {
@@ -300,20 +349,22 @@ figcaption {
 	}
 }
 
-.fp-controlArrows {
+.fp-controlArrow {
 	
 	@media (orientation: portrait) {
-		display: none;
+		display: none !important;
 		
 		@media (min-width:650px){
 			display: block;
 		}
 	}
 	@media (orientation: landscape){
-		transform: scale(.75,.75);
-		
+		transform: scale(0.5,0.5)
+			translateY(50%);
+			
 		@media(min-width:650px){
-			transform: scale(1,1);
+			transform:  scale(1, 1)
+				translateY(50%)!important;
 		}
 	}
 }
