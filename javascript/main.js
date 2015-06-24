@@ -107,28 +107,29 @@ $(document).ready(function() {
 		}
 	}
 	function updateAccordion(){
+		
 		var $view = $('body').attr('class');
 		$view = $view.replace(/fp-viewing-/,'').replace(/-slide\d+/,'');
 		$view = parseInt($view);
 		
 		for(var j = 0; j < sections.length; j++){
-			if ($view >= sections[i].min && $view <= sections[i].max){
+			if ($view >= sections[j].min && $view <= sections[j].max){
 				var $index = sections[j].min;
-				$('to')
+				$('#sidenav > ul > li a').removeClass('active');
+				$('.toSect'+($index+1)).addClass('active');
 			}
 			if(typeof sections[j].subs != "undefined"){
 				for(var k = 0; k < sections[j].subs.length; k++){
 					var $subIndex = sections[j].subs[k].index;
 					if($view == $subIndex){
-						$('#toSect'+($subIndex+1)).addClass('active');
-					}else{
-						$('#toSect'+($subIndex+1)).removeClass('active');
+						$('#sidenav li li a').removeClass('active');
+						$('.toSect'+($subIndex+1)).addClass('active');
 					}
 				}
 			}
 		}
 	}
 	setInterval(updateHeader,1);
-	
+	setInterval(updateAccordion,1);
 });
 

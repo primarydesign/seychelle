@@ -77,20 +77,21 @@ header {
 		font-family: 'nobel-light-stack';
 		
 		li {
-			
 			ul {
-				//display: none;
-				margin-left: 10px;
-			}
-			
-			&.active {
-				color: $brown;
-				ul {
-					display: block;
-					color: $brown;
+				display: none;
+				
+				li {
+					margin-left: 10px;
 				}
 			}
-		}		
+		}
+		
+		.active {
+			color:$brown;
+			& + ul {
+				display: block;
+			}
+		}
 	}
 	@media (min-width:700px){
 		display: block;
