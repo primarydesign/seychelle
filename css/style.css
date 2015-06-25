@@ -115,7 +115,7 @@ figcaption {
 }
 
 .floorplan-info h2 {
-	padding-top:100px;
+	padding-top:0px;
 }
 
 .floorplan-info h2, .floorplan-info h3, .floorplan-info p, .floorplan-info {
@@ -170,15 +170,16 @@ button {
 	background-image:url(../images/seychelle-floorplan-penthouse-901.gif);
 	background-size:contain;
 	background-repeat:no-repeat;
-	background-position:center;
-	height: 650px;
+	background-position:top;
+	height: 400px;
 	margin-top: 150px;
 }
 
 /* Property Features */
 
 .property-features, .highlights {
-	height:100%;	
+    height: auto;
+    padding-bottom: 150px !important;
 }
 
 .property-features p {
@@ -223,10 +224,11 @@ button {
 	 list-style-position:inside;
  }
  
+
  .highlights li {
-	 font-size:1.2em;
-	 line-height:2em;
- }
+    font-size: 1em;
+    line-height: 1.6em;
+}
  
  
  /* Neighborhood Section */
@@ -277,7 +279,25 @@ padding: 0 50px 150px 250px;
 figcaption h3 {
 	display:none;
 }
-  
+ 
+.property-features, .highlights {
+	height:100%;	
+	paddig-bottom:0;
+}
+
+.floorplan {
+	background-position:center;
+	height: 650px;
+}
+
+.floorplan-info h2 {
+    padding-top: 100px;
+}
+
+ .highlights li {
+	 font-size:1.2em;
+	 line-height:2em;
+ }
  }
  
 @media (min-width:1000px) {
@@ -291,24 +311,22 @@ figcaption h3 {
 	float:left;
 	width:50%;
 	padding-top:50px;
+	padding-right: 0px;
 }
 
-.highlights, .floorplan-info, .property-features {
-	padding-left: 250px;
-	padding-right: 0px;
+.highlights, .property-features {
+	padding-right: 250px;
  }
  
  .dining-info {
 	padding-left: 250px;
 	padding-right: 200px;
  }
-
 	  
 .property-features p {
     font-size: 1.5em;
     line-height: 1.6em;	 
  }
- 
 
  }
  
