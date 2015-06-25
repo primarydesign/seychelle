@@ -19,35 +19,16 @@
 
 /* line 1, ../sass/_circles.scss */
 .circle {
-  -webkit-align-content: flex-end;
-  -ms-flex-line-pack: end;
   align-content: flex-end;
-  -webkit-box-align: end;
-  -webkit-align-items: flex-end;
-  -ms-flex-align: end;
   align-items: flex-end;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
   justify-content: center;
   position: relative;
 }
 /* line 8, ../sass/_circles.scss */
 .circle button {
-  -webkit-align-content: center;
-  -ms-flex-line-pack: center;
   align-content: center;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-  -ms-flex-align: center;
   align-items: center;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
   height: 10%;
   margin-bottom: 17%;
@@ -285,24 +266,11 @@ header .menu-wrap {
 }
 /* line 33, ../sass/main.scss */
 header .menu-wrap #menu-open {
-  -webkit-align-content: center;
-  -ms-flex-line-pack: center;
   align-content: center;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-  -ms-flex-align: center;
   align-items: center;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-flex-flow: column;
-  -ms-flex-flow: column;
   flex-flow: column;
   height: 100%;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
   justify-content: center;
 }
 /* line 41, ../sass/main.scss */
@@ -372,7 +340,7 @@ header .menu-wrap #menu-open div:nth-child(-n+2) {
 .side-wrap #sidenav .active + ul {
   display: block;
 }
-@media (min-width: 700px) {
+@media (min-width: 900px) {
   /* line 54, ../sass/main.scss */
   .side-wrap {
     display: block;
@@ -381,20 +349,10 @@ header .menu-wrap #menu-open div:nth-child(-n+2) {
 
 /* line 110, ../sass/main.scss */
 #menu-overlay {
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-  -ms-flex-align: center;
   align-items: center;
   display: none;
   height: 100%;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
   flex-direction: column;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
   justify-content: center;
   position: fixed;
   top: 0;
@@ -404,9 +362,6 @@ header .menu-wrap #menu-open div:nth-child(-n+2) {
 }
 /* line 124, ../sass/main.scss */
 #menu-overlay.active {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
 }
 /* line 128, ../sass/main.scss */
@@ -501,21 +456,11 @@ header .menu-wrap #menu-open div:nth-child(-n+2) {
 
 /* line 203, ../sass/main.scss */
 .terms-wrapper {
-  -webkit-align-content: center;
-  -ms-flex-line-pack: center;
   align-content: center;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-  -ms-flex-align: center;
   align-items: center;
   display: none;
-  -webkit-flex-flow: column nowrap;
-  -ms-flex-flow: column nowrap;
   flex-flow: column nowrap;
   height: 100%;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
   justify-content: center;
   left: 0;
   position: fixed;
@@ -581,28 +526,14 @@ header .menu-wrap #menu-open div:nth-child(-n+2) {
 }
 /* line 264, ../sass/main.scss */
 .terms-wrapper.active {
-  display: -webkit-box !important;
-  display: -webkit-flex !important;
-  display: -ms-flexbox !important;
   display: flex !important;
 }
 
 /* line 271, ../sass/main.scss */
 #section1 div[id^='slide'] {
-  -webkit-align-content: center;
-  -ms-flex-line-pack: center;
   align-content: center;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-  -ms-flex-align: center;
   align-items: center;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
   justify-content: center;
 }
 
@@ -643,33 +574,21 @@ figcaption {
 @media (orientation: landscape) {
   /* line 297, ../sass/main.scss */
   .fp-controlArrow {
-    -webkit-transform: scale(0.5, 0.5) translateY(50%);
-    -ms-transform: scale(0.5, 0.5) translateY(50%);
     transform: scale(0.5, 0.5) translateY(50%);
   }
 }
 @media (orientation: landscape) and (min-width: 650px) {
   /* line 297, ../sass/main.scss */
   .fp-controlArrow {
-    -webkit-transform: scale(1, 1) translateY(50%) !important;
-    -ms-transform: scale(1, 1) translateY(50%) !important;
     transform: scale(1, 1) translateY(50%) !important;
   }
 }
 
 /* line 317, ../sass/main.scss */
 .fp-slidesNav {
-  -webkit-box-align: 0;
-  -webkit-align-items: 0;
-  -ms-flex-align: 0;
   align-items: 0;
   bottom: 5px !important;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-flex-flow: row nowrap;
-  -ms-flex-flow: row nowrap;
   flex-flow: row nowrap;
 }
 /* line 323, ../sass/main.scss */
