@@ -81,7 +81,7 @@ p {
 }
 
 .fp-slides h2 {
-	    font-family: 'dtl_nobelt_bold';
+	    font-family: 'dtl_nobelt_bold', 'Helvetica Neue', Arial, sans-serif !important;
 }
 
 
@@ -94,11 +94,10 @@ sup {
 
 figcaption {
 	font-family:'dtl_nobelt_regular', 'Helvetica Neue', Helvetica, Arial, sans-serif !important;
-	bottom: 0 !important;
-	position: absolute;
+	top: 60px !important;
 	color: rgb(255, 255, 255);
 	margin: auto;
-	background: rgba(0,0,0,0.6);
+	background: rgba(73, 66, 60, 0.8) none repeat scroll 0% 0%;
 	width: 100%;
 	line-height:1.5em;
 	font-weight:200;
@@ -127,6 +126,21 @@ figcaption {
 	font-size:.8em;
 	line-height:1.5em;
 	letter-spacing:1px;
+}
+
+
+.btn-zoom, .btn-print {
+	list-style-position:inside;
+	    line-height: 2em;
+}
+
+.btn-zoom li {
+	  list-style-image:url(../images/zoom-icon.png);
+
+}
+
+.btn-print li {
+ list-style-image:url(../images/print-icon.png);
 }
 
 .plan-features {
@@ -224,8 +238,14 @@ button {
 }
 
 .caption-wrap {
-	max-width:1200px;
-	margin:auto;
+	max-width: 1200px;
+	margin: auto;
+	padding: 0px 10px;
+}
+
+figcaption h3 {
+	   font-family: 'dtl_nobelt_bold', 'Helvetica Neue', Arial, sans-serif !important;
+	   font-size:.8em;
 }
 
  @media (min-width:960px) and
@@ -248,6 +268,15 @@ button {
 .floorplan-info { 
 padding: 0 50px 150px 250px;
  }
+ 
+ .caption-wrap {
+	max-width: 1700px;
+	padding: 0px 250px;
+}
+
+figcaption h3 {
+	display:none;
+}
   
  }
  
