@@ -295,14 +295,16 @@ header {
 	&.brown {background: $brown-trans;}
 	
 	@media (orientation: portrait) {
-		height: 70vw;
-		width: 70vw;
+		height: 60vw;
+		max-height: 600px;
+		max-width: 600px;
+		width: 60vw;
 		
-		@media (min-width:650px){
-			height: 50vw;
-			width: 50vw;
-			h3 {font-size: 1.5em;}
-		}
+//		@media (min-width:650px){
+//			height: 50vw;
+//			width: 50vw;
+//			h3 {font-size: 1.5em;}
+//		}
 	}
 	@media (orientation: landscape){
 		height: 70vh;
@@ -372,6 +374,7 @@ figcaption {
 
 .fp-slidesNav {
 	align-items: 0;
+	bottom: 5px !important;
 	display: flex;
 	flex-flow: row nowrap;
 	a {
@@ -385,12 +388,5 @@ figcaption {
 		&.active span, &:hover span {
 			background: #fff !important;
 		}
-	}
-}
-
-#terms {
-	p {color: #000 !important;}
-	strong {
-		color: $orange !important;
 	}
 }
