@@ -237,10 +237,12 @@ header {
 			width: 100%;
 			background: #eee;
 			h2 {
+				color: #000;
 				line-height: 40px;
 				text-align: center;
 			}
 			p {
+				color: #000;
 				font-family: $nobel-light-stack;
 				font-size: 0.8em;
 				line-height: 1.1em;
@@ -383,5 +385,12 @@ figcaption {
 		&.active span, &:hover span {
 			background: #fff !important;
 		}
+	}
+}
+
+#terms {
+	p {color: #000 !important;}
+	strong {
+		color: $orange !important;
 	}
 }
