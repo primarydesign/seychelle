@@ -1,46 +1,38 @@
 .circle {
-	align-content: center;
-	align-items: center;
+	align-content: flex-end;
+	align-items: flex-end;
 	display: flex;
 	justify-content: center;
 	position: relative;
 	
-	border-radius: 50%;
-	color: #fff;
-	font-family: 'DTL Nobel';
-	font-weight: 400;
-	
-	.inner-wrap {
+	button {
+		align-content: center;
 		align-items: center;
 		display: flex;
-		flex-direction: column;
-		height: 95%;
-		justify-content: center;
-		text-align: center;
-		width: 95%;
-		
-		border-radius: 50%;
-		background-image: url(../images/circles-ring-border.svg);
-		background-origin: padding-box;
-		background-size: contain;
-		background-position: center center;
+		height: 10%;
+		margin-bottom: 17%;
+		position: relative;
+		width: 35%;
+		background: $orange;
+		font-size: .6em;
+		min-height: 30px;
+		min-width: 100px;
+		padding: 0;
 	}
 	
-	button {
-		margin-top: 20px;
-		height: 30px;
-		width: 120px;
-		background: $orange;
-		border: none;
-		color: #fff;
-		font-family: 'DTL Nobel';
-		font-size: .5em;
-		font-weight: 600;
-		letter-spacing: .75px;
+	@media (orientation: portrait) {
+		height: 60vw;
+		max-height: 600px;
+		max-width: 600px;
+		min-width: 300px;
+		min-height: 300px	;
+		width: 60vw;
 	}
-}
-@media all and (-moz-orientation:landscape) {
-	.circle {
-		height: 100vh;
+	@media (orientation: landscape){
+		height: 70vh;
+		margin-top: 50px;
+		max-height: 475px;
+		max-width: 475px;
+		width: 70vh;
 	}
 }

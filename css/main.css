@@ -19,75 +19,49 @@
 
 /* line 1, ../sass/_circles.scss */
 .circle {
-  -webkit-align-content: center;
-  -ms-flex-line-pack: center;
-  align-content: center;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-  -ms-flex-align: center;
-  align-items: center;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
+  align-content: flex-end;
+  align-items: flex-end;
   display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
   justify-content: center;
   position: relative;
-  border-radius: 50%;
-  color: #fff;
-  font-family: 'DTL Nobel';
-  font-weight: 400;
 }
-/* line 13, ../sass/_circles.scss */
-.circle .inner-wrap {
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-  -ms-flex-align: center;
-  align-items: center;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  height: 95%;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  text-align: center;
-  width: 95%;
-  border-radius: 50%;
-  background-image: url(../images/circles-ring-border.svg);
-  background-origin: padding-box;
-  background-size: contain;
-  background-position: center center;
-}
-/* line 29, ../sass/_circles.scss */
+/* line 8, ../sass/_circles.scss */
 .circle button {
-  margin-top: 20px;
-  height: 30px;
-  width: 120px;
+  align-content: center;
+  align-items: center;
+  display: flex;
+  height: 10%;
+  margin-bottom: 17%;
+  position: relative;
+  width: 35%;
   background: #aa650d;
-  border: none;
-  color: #fff;
-  font-family: 'DTL Nobel';
-  font-size: .5em;
-  font-weight: 600;
-  letter-spacing: .75px;
+  font-size: .6em;
+  min-height: 30px;
+  min-width: 100px;
+  padding: 0;
 }
-
-@media all and (-moz-orientation: landscape) {
-  /* line 43, ../sass/_circles.scss */
+@media (orientation: portrait) {
+  /* line 1, ../sass/_circles.scss */
   .circle {
-    height: 100vh;
+    height: 60vw;
+    max-height: 600px;
+    max-width: 600px;
+    min-width: 300px;
+    min-height: 300px;
+    width: 60vw;
   }
 }
+@media (orientation: landscape) {
+  /* line 1, ../sass/_circles.scss */
+  .circle {
+    height: 70vh;
+    margin-top: 50px;
+    max-height: 475px;
+    max-width: 475px;
+    width: 70vh;
+  }
+}
+
 /* line 1, ../sass/_backgrounds.scss */
 h1 {
   font-size: 5em;
@@ -137,99 +111,112 @@ h1 {
 }
 
 /* line 34, ../sass/_backgrounds.scss */
-#section4 {
-  background: url(../images/luxury-penthouse-master-bath-at-the_Seychelle_Santa-Monica-California.jpg);
-}
-
-/* line 38, ../sass/_backgrounds.scss */
 #section6 {
   background: url(../images/man-swimming-underwater-in-the-rooftop-pool_Santa-Monica-California.jpg);
 }
 
-/* line 41, ../sass/_backgrounds.scss */
+/* line 37, ../sass/_backgrounds.scss */
 #section7 {
   background: url(../images/concierge-lobby-at-the_Seychelle_Santa-Monica-California.jpg);
 }
 
-/* line 44, ../sass/_backgrounds.scss */
+/* line 40, ../sass/_backgrounds.scss */
 #section8 {
   background: url(../images/man-and-woman-by-the-swimming-pool_Seychelle_Santa-Monica-California.jpg);
 }
 
-/* line 47, ../sass/_backgrounds.scss */
+/* line 43, ../sass/_backgrounds.scss */
 #section9 {
   background: url(../images/on-site-fitness-center-at-the_Seychelle_Santa-Monica-California.jpg);
 }
 
-/* line 50, ../sass/_backgrounds.scss */
+/* line 46, ../sass/_backgrounds.scss */
 #section10 {
   background: url(../images/couple-toasting-champagne-glasses-by-the_Seychelle_Santa-Monica-California.jpg);
 }
 
-/* line 53, ../sass/_backgrounds.scss */
+/* line 49, ../sass/_backgrounds.scss */
 #section11 {
   background: url(../images/dog-at-the-pet-spa-by-the_Seychelle_Santa-Monica-California.jpg);
 }
 
-/* line 56, ../sass/_backgrounds.scss */
+/* line 52, ../sass/_backgrounds.scss */
 #section12 {
   background: url(../images/female-jogger-running-along-the-west-coast-by-the_Seychelle_Santa-Monica-California.jpg);
 }
 
-/* line 59, ../sass/_backgrounds.scss */
+/* line 55, ../sass/_backgrounds.scss */
 #section13 {
   background: url(../images/santa-monica-place-by-the_Seychelle_Santa-Monica-California.jpg);
 }
 
-/* line 62, ../sass/_backgrounds.scss */
+/* line 58, ../sass/_backgrounds.scss */
 #section14 {
   background: url(../images/Tongva-Park-by-the_Seychelle_Santa-Monica-California.jpg.jpg);
 }
 
-/* line 65, ../sass/_backgrounds.scss */
+/* line 61, ../sass/_backgrounds.scss */
 #section15 {
   background: url(../images/palm-trees-by-the_Seychelle_Santa-Monica-California.jpg);
 }
 
-/* line 69, ../sass/_backgrounds.scss */
+/* line 64, ../sass/_backgrounds.scss */
 #slide1 {
   background: url(../images/luxury-penthouse-outdoor-terrace-at-the_Seychelle_Santa-Monica-California.jpg);
   padding: 6% 0 0 0;
 }
+/* line 67, ../sass/_backgrounds.scss */
+#slide1 .circle {
+  background: url(../images/circle-private-terrace.png);
+}
 
-/* line 73, ../sass/_backgrounds.scss */
+/* line 71, ../sass/_backgrounds.scss */
 #slide2 {
   background: url(../images/pet-friendly-lobby-and-concierge-at-the_Seychelle_Santa-Monica-California.jpg);
   padding: 6% 0 0 0;
 }
+/* line 74, ../sass/_backgrounds.scss */
+#slide2 .circle {
+  background: url(../images/circle-luxury-penthouse.png);
+}
 
-/* line 76, ../sass/_backgrounds.scss */
+/* line 78, ../sass/_backgrounds.scss */
 #slide3 {
   background: url(../images/luxury-penthouse-living-room-at-the_Seychelle_Santa-Monica-California.jpg);
   padding: 6% 0 0 0;
 }
+/* line 81, ../sass/_backgrounds.scss */
+#slide3 .circle {
+  background: url(../images/circle-amazing-views.png);
+}
 
-/* line 79, ../sass/_backgrounds.scss */
+/* line 85, ../sass/_backgrounds.scss */
+#section1 [id^="slide"] .circle {
+  background-position: center center;
+  background-size: cover;
+}
+
+/* line 89, ../sass/_backgrounds.scss */
 #section0, #section2, #section3, #section4, #section6, #section7, #section8, #section9, #section10, #section11, #section12, #section13, #section14, #section15 {
   background-position: center !important;
   background-size: cover !important;
 }
 
-/* line 83, ../sass/_backgrounds.scss */
+/* line 93, ../sass/_backgrounds.scss */
 #slide1 {
   background-position: right !important;
   background-size: cover !important;
   padding: 0;
 }
 
-/* line 88, ../sass/_backgrounds.scss */
+/* line 98, ../sass/_backgrounds.scss */
 #slide2, #slide3 {
   background-position: center !important;
   background-size: cover !important;
   padding: 0;
 }
 
-/* line 94, ../sass/_backgrounds.scss */
+/* line 104, ../sass/_backgrounds.scss */
 #infoMenu li a {
   color: #fff;
 }
@@ -279,24 +266,11 @@ header .menu-wrap {
 }
 /* line 33, ../sass/main.scss */
 header .menu-wrap #menu-open {
-  -webkit-align-content: center;
-  -ms-flex-line-pack: center;
   align-content: center;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-  -ms-flex-align: center;
   align-items: center;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-flex-flow: column;
-  -ms-flex-flow: column;
   flex-flow: column;
   height: 100%;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
   justify-content: center;
 }
 /* line 41, ../sass/main.scss */
@@ -375,20 +349,10 @@ header .menu-wrap #menu-open div:nth-child(-n+2) {
 
 /* line 110, ../sass/main.scss */
 #menu-overlay {
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-  -ms-flex-align: center;
   align-items: center;
   display: none;
   height: 100%;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
   flex-direction: column;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
   justify-content: center;
   position: fixed;
   top: 0;
@@ -398,9 +362,6 @@ header .menu-wrap #menu-open div:nth-child(-n+2) {
 }
 /* line 124, ../sass/main.scss */
 #menu-overlay.active {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
 }
 /* line 128, ../sass/main.scss */
@@ -495,21 +456,11 @@ header .menu-wrap #menu-open div:nth-child(-n+2) {
 
 /* line 203, ../sass/main.scss */
 .terms-wrapper {
-  -webkit-align-content: center;
-  -ms-flex-line-pack: center;
   align-content: center;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-  -ms-flex-align: center;
   align-items: center;
   display: none;
-  -webkit-flex-flow: column nowrap;
-  -ms-flex-flow: column nowrap;
   flex-flow: column nowrap;
   height: 100%;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
   justify-content: center;
   left: 0;
   position: fixed;
@@ -575,98 +526,18 @@ header .menu-wrap #menu-open div:nth-child(-n+2) {
 }
 /* line 264, ../sass/main.scss */
 .terms-wrapper.active {
-  display: -webkit-box !important;
-  display: -webkit-flex !important;
-  display: -ms-flexbox !important;
   display: flex !important;
 }
 
 /* line 271, ../sass/main.scss */
 #section1 div[id^='slide'] {
-  -webkit-align-content: center;
-  -ms-flex-line-pack: center;
   align-content: center;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-  -ms-flex-align: center;
   align-items: center;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
   justify-content: center;
 }
 
-/* line 280, ../sass/main.scss */
-.circle * {
-  font-family: "dtl_nobelt_light", sans-serif;
-}
-/* line 282, ../sass/main.scss */
-.circle h2 {
-  line-height: 1.25em;
-}
-/* line 285, ../sass/main.scss */
-.circle h3 {
-  font-size: 1em;
-}
-/* line 289, ../sass/main.scss */
-.circle button {
-  font-family: "dtl_nobelt_light", sans-serif;
-  font-size: 0.75em;
-}
-/* line 294, ../sass/main.scss */
-.circle.blue {
-  background: rgba(89, 130, 148, 0.9);
-}
-/* line 295, ../sass/main.scss */
-.circle.brown {
-  background: rgba(73, 66, 61, 0.9);
-}
-@media (orientation: portrait) {
-  /* line 279, ../sass/main.scss */
-  .circle {
-    height: 60vw;
-    max-height: 600px;
-    max-width: 600px;
-    width: 60vw;
-  }
-}
-@media (orientation: landscape) {
-  /* line 279, ../sass/main.scss */
-  .circle {
-    height: 70vh;
-    margin-top: 50px;
-    max-height: 475px;
-    max-width: 475px;
-    width: 70vh;
-  }
-}
-@media (orientation: landscape) and (min-width: 650px) {
-  /* line 279, ../sass/main.scss */
-  .circle {
-    margin-top: 0;
-  }
-}
-
-/* line 322, ../sass/main.scss */
-#slide1 .circle h2 {
-  font-size: 2.50em;
-}
-
-/* line 327, ../sass/main.scss */
-#slide2 .circle h2 {
-  font-size: 2.00em;
-}
-
-/* line 332, ../sass/main.scss */
-#slide3 .circle h2 {
-  font-size: 2.25em;
-}
-
-/* line 337, ../sass/main.scss */
+/* line 279, ../sass/main.scss */
 figcaption {
   font-family: 'dtl_nobelt_light', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   bottom: 0 !important;
@@ -681,58 +552,46 @@ figcaption {
   padding: 10px 0;
 }
 @media (min-width: 768px) and (-webkit-device-pixel-ratio: 1) {
-  /* line 337, ../sass/main.scss */
+  /* line 279, ../sass/main.scss */
   figcaption {
     line-height: 2.5em;
   }
 }
 
 @media (orientation: portrait) {
-  /* line 355, ../sass/main.scss */
+  /* line 297, ../sass/main.scss */
   .fp-controlArrow {
     display: none !important;
   }
 }
 @media (orientation: portrait) and (min-width: 650px) {
-  /* line 355, ../sass/main.scss */
+  /* line 297, ../sass/main.scss */
   .fp-controlArrow {
     display: block;
   }
 }
 
 @media (orientation: landscape) {
-  /* line 355, ../sass/main.scss */
+  /* line 297, ../sass/main.scss */
   .fp-controlArrow {
-    -webkit-transform: scale(0.5, 0.5) translateY(50%);
-    -ms-transform: scale(0.5, 0.5) translateY(50%);
     transform: scale(0.5, 0.5) translateY(50%);
   }
 }
 @media (orientation: landscape) and (min-width: 650px) {
-  /* line 355, ../sass/main.scss */
+  /* line 297, ../sass/main.scss */
   .fp-controlArrow {
-    -webkit-transform: scale(1, 1) translateY(50%) !important;
-    -ms-transform: scale(1, 1) translateY(50%) !important;
     transform: scale(1, 1) translateY(50%) !important;
   }
 }
 
-/* line 375, ../sass/main.scss */
+/* line 317, ../sass/main.scss */
 .fp-slidesNav {
-  -webkit-box-align: 0;
-  -webkit-align-items: 0;
-  -ms-flex-align: 0;
   align-items: 0;
   bottom: 5px !important;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-flex-flow: row nowrap;
-  -ms-flex-flow: row nowrap;
   flex-flow: row nowrap;
 }
-/* line 381, ../sass/main.scss */
+/* line 323, ../sass/main.scss */
 .fp-slidesNav a span {
   background: transparent !important;
   border: 2px solid #fff !important;
@@ -740,7 +599,7 @@ figcaption {
   margin: 0 !important;
   width: 10px !important;
 }
-/* line 388, ../sass/main.scss */
+/* line 330, ../sass/main.scss */
 .fp-slidesNav a.active span, .fp-slidesNav a:hover span {
   background: #fff !important;
 }
