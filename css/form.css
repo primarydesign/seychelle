@@ -1,5 +1,5 @@
+
 .contact {
-	
 	margin:auto;	
 }
 
@@ -149,7 +149,7 @@ background: rgba(0,0,0,0.2);
  /* replace in main.css */
  
  .circle button {
-    font-family: "dtl_nobelt_bold",sans-serif  ;
+    font-family: 'dtl_nobelt_bold', Helvetica, Arial, sans-serif !important;
     font-size: .8em ;
     line-height: 25% ;
     letter-spacing: 1px ;
@@ -160,6 +160,7 @@ background: rgba(0,0,0,0.2);
     color: #FFF ;
 	width:auto;
 	font-weight:normal;
+	padding: 0 15px;
 }
 
 #slide1 .circle h2 {
@@ -191,4 +192,13 @@ background: rgba(0,0,0,0.2);
 
 #section1, #section7, #section9, #section12, #section14 {
 	background-position:right !important;
+}
+
+#menu-overlay #menu li a {
+	    font-family: 'dtl_nobelt_light', Helvetica, Arial, sans-serif !important;
+		line-height: 1.5em;
+		letter-spacing:1px;
+}
+figcaption {
+position: relative;
 }
