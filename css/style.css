@@ -298,6 +298,11 @@ figcaption h3 {
 	 font-size:1.2em;
 	 line-height:2em;
  }
+ 
+ .cbp-mc-submit-wrap, .contact h2 {
+text-align:center !important;
+padding-left: 10px !important;
+}
  }
  
 @media (min-width:1000px) {
@@ -331,16 +336,7 @@ figcaption h3 {
 
  }
  
-.cbp-mc-submit {
-  background: #aa650d !important;
-  font-size:1.5em; 
- }
- 
-.cbp-mc-submit-wrap, .contact h2 {
-text-align:left !important;
-padding-left:30px;
-line-height:1.3em;
-}
+
  
  @media (min-width:700px) and (max-width:1599px) {
 	  .contact {
