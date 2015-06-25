@@ -2,7 +2,8 @@ $(document).ready(function() {
 	$('#fullpage').fullpage({
 		verticalCentered: false,
 		slidesNavigation: true,
-		scrollOverflow: true
+		scrollOverflow: true,
+		css3: true
 	});
 	//MENU ACTIVATION
 	$('#menu-open').click(function(){
@@ -154,4 +155,15 @@ $(document).ready(function() {
 	}
 	setInterval(updateHeader,1);
 	setInterval(updateAccordion,1);
+	
+	//AUTO-ROTATE SLIDER
+	function autoRotateSlider() {
+		var $view = $('body').attr('class'),
+			 $sect = $view.replace(/fp-viewing-/,'').replace(/-slide\d+/,''),
+			 $slide = $view.replace(/fp-viewing-\d+-slide/,'');
+		if ($sect == 0) {
+			$.fn.fullpage.moveSlideRight();
+		}
+	}
+	setInterval(autoRotateSlider,4000);
 });
