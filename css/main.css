@@ -285,7 +285,7 @@ header .menu-wrap #menu-open div:nth-child(-n+2) {
 }
 
 /* line 54, ../sass/main.scss */
-.side-wrap {
+.side-wrap { 
   display: none;
   margin-left: 25px;
   position: fixed;
@@ -340,7 +340,7 @@ header .menu-wrap #menu-open div:nth-child(-n+2) {
 .side-wrap #sidenav .active + ul {
   display: block;
 }
-@media (min-width: 900px) {
+@media (min-width: 700px) {
   /* line 54, ../sass/main.scss */
   .side-wrap {
     display: block;

@@ -84,7 +84,9 @@ p {
 	    font-family: 'dtl_nobelt_bold', 'Helvetica Neue', Arial, sans-serif !important;
 }
 
-
+.fp-controlArrow.fp-next, .fp-controlArrow.fp-prev {
+    display: none;
+}
 .dining-info p {
 font-family:'dtl_nobelt_light', 'Helvetica Neue', Helvetica, Arial, sans-serif !important;	
 }
@@ -94,15 +96,15 @@ sup {
 
 figcaption {
 	font-family:'dtl_nobelt_regular', 'Helvetica Neue', Helvetica, Arial, sans-serif !important;
-	top: 60px !important;
+	bottom: 0 !important;
+	position: absolute;
 	color: rgb(255, 255, 255);
 	margin: auto;
-	
 	width: 100%;
 	line-height:1.5em;
 	font-weight:200;
 	letter-spacing:1px;
-	padding:10px 0;
+	padding:10px;
 }
 
 /* Floor Plan Section */
@@ -118,8 +120,12 @@ figcaption {
 	padding-top:0px;
 }
 
-.floorplan-info h2, .floorplan-info h3, .floorplan-info p, .floorplan-info {
+.floorplan-info h2, .floorplan-info h3, .floorplan-info p, .floorplan-info, .floorplan-info li a {
 	color:#49423D;
+}
+
+.floorplan-info li a {
+	text-decoration:none;
 }
 
 .plan-details, .plan-features, .btn-print, .btn-zoom {
@@ -178,7 +184,7 @@ button {
 /* Property Features */
 
 .property-features, .highlights {
-    height: auto;
+    height: 100%;
     padding-bottom: 150px !important;
 }
 
@@ -196,7 +202,7 @@ button {
 
 .dining-info, .property-features, .highlights {
 	padding: 0 30px;
-	background: rgba(73,66,60,0.7);
+	background: rgba(73,66,60,0.8);
 }
 
 @media (min-width: 801px) {
@@ -234,15 +240,15 @@ button {
  /* Neighborhood Section */
 
 .place h3 {
-	text-align:center !important;
 	line-height:1em;
 	padding:10px 0;
 }
 
 .caption-wrap {
-	max-width: 1200px;
-	margin: auto;
-	padding: 0px 10px;
+max-width: 1280px;
+margin: auto;
+padding: 0px 10px;
+text-align: left;
 }
 
 figcaption h3 {
@@ -250,15 +256,9 @@ figcaption h3 {
 	   font-size:.8em;
 }
 
- @media (min-width:960px) and
-(-webkit-min-device-pixel-ratio: 1) {
-	 figcaption {
-	 line-height:2.5em;
- }
- }
+
  
  /* Non-mobile queries */
- 
 
  @media (min-width:700px) {
 
@@ -270,18 +270,12 @@ figcaption h3 {
 .floorplan-info { 
 padding: 0 50px 150px 250px;
  }
- 
- .caption-wrap {
-	max-width: 1700px;
-	padding: 0px 250px;
-}
 
 figcaption h3 {
 	display:none;
 }
  
 .property-features, .highlights {
-	height:100%;	
 	paddig-bottom:0;
 }
 
@@ -300,8 +294,8 @@ figcaption h3 {
  }
  
  .cbp-mc-submit-wrap, .contact h2 {
-text-align:center !important;
-padding-left: 10px !important;
+text-align:left !important;
+padding-left: 30px !important;
 }
  }
  
@@ -353,3 +347,23 @@ padding-left: 10px !important;
 	 }
  }
  
+@media all and (orientation:portrait) {
+	.property-features, .highlights {
+	height:auto;
+}
+}
+
+footer {
+	color:#ffffff;
+	background:rgb(73,66,60);
+	font-family:'dtl_nobelt_regular', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-size:14px;
+	line-height:50px;
+	text-transform: uppercase;
+	line-height: 20px;
+	padding: 15px;
+	width:100%;
+	bottom:0px;
+	position:absolute;
+	letter-spacing:1px;
+}
