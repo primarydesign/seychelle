@@ -42,6 +42,20 @@ $(document).ready(function() {
 	$('#banner img').click(function(){
 		$.fn.fullpage.moveTo(1);
 	});
+	//OVERLAY OPENING & CLOSING
+	//Open element with id matching open-<id-name> class pattern.
+	$('[class^="open-"]').click(function(){
+		var $name =	$(this).attr('class');
+		$name = $name.match(/open-([a-zA-Z0-9-]+)/)[1];
+		$('#'+$name).addClass('active');
+	});
+	//Close element with id matching close-<id-name> class pattern.
+	$('.overlay .close').click(function(){
+		var $name =	$(this).attr('class');
+		$name = $name.match(/close-([a-zA-Z0-9-]+)/)[1];
+		$('#'+$name).removeClass('active');
+	});
+	
 	//DYNAMIC HEADER TEXT
 	var sections = [
 		{
