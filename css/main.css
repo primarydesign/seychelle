@@ -439,23 +439,27 @@ header .menu-wrap #menu-open div:nth-child(-n+2) {
   -webkit-transform: rotate(-135deg);
   -moz-transform: rotate(-135deg);
 }
-/* line 189, ../sass/main.scss */
-#menu-overlay #open-terms {
-  padding-bottom: 10px;
+/* line 188, ../sass/main.scss */
+#menu-overlay .legal-disclosures {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  margin: 0 auto;
+  padding-bottom: 15px;
   position: absolute;
-  width: 100%;
+  width: 290px;
   bottom: 0;
+  right: 0;
   left: 0;
-  text-align: center;
 }
-/* line 196, ../sass/main.scss */
-#menu-overlay #open-terms a {
-  color: white;
-  font-family: 'dtl_nobelt_light';
-  font-size: 1.2em;
+/* line 198, ../sass/main.scss */
+#menu-overlay .legal-disclosures a {
+  color: #fff;
+  font-family: "dtl_nobelt_light", sans-serif;
+  font-size: 1.1em;
 }
 
-/* line 204, ../sass/main.scss */
+/* line 206, ../sass/main.scss */
 .terms-wrapper {
   align-content: center;
   align-items: center;
@@ -470,13 +474,13 @@ header .menu-wrap #menu-open div:nth-child(-n+2) {
   z-index: 90;
   background: rgba(0, 0, 0, 0.5);
 }
-/* line 218, ../sass/main.scss */
+/* line 220, ../sass/main.scss */
 .terms-wrapper .terms-box {
   height: 100%;
   width: 100%;
   position: relative;
 }
-/* line 223, ../sass/main.scss */
+/* line 225, ../sass/main.scss */
 .terms-wrapper .terms-box #close-terms {
   display: inline-block;
   height: 40px;
@@ -487,7 +491,7 @@ header .menu-wrap #menu-open div:nth-child(-n+2) {
   text-align: center;
   text-transform: uppercase;
 }
-/* line 233, ../sass/main.scss */
+/* line 235, ../sass/main.scss */
 .terms-wrapper .terms-box #terms {
   box-sizing: border-box;
   height: 100%;
@@ -496,13 +500,13 @@ header .menu-wrap #menu-open div:nth-child(-n+2) {
   width: 100%;
   background: #eee;
 }
-/* line 240, ../sass/main.scss */
+/* line 242, ../sass/main.scss */
 .terms-wrapper .terms-box #terms h2 {
   color: #000;
   line-height: 40px;
   text-align: center;
 }
-/* line 245, ../sass/main.scss */
+/* line 247, ../sass/main.scss */
 .terms-wrapper .terms-box #terms p {
   color: #000;
   font-family: "dtl_nobelt_light", sans-serif;
@@ -511,13 +515,13 @@ header .menu-wrap #menu-open div:nth-child(-n+2) {
   text-align: justify;
   padding-bottom: 10px;
 }
-/* line 253, ../sass/main.scss */
+/* line 255, ../sass/main.scss */
 .terms-wrapper .terms-box #terms strong {
   color: #aa650d;
   font-weight: bold;
 }
 @media (min-width: 700px) {
-  /* line 218, ../sass/main.scss */
+  /* line 220, ../sass/main.scss */
   .terms-wrapper .terms-box {
     height: 80%;
     max-height: 500px;
@@ -525,12 +529,12 @@ header .menu-wrap #menu-open div:nth-child(-n+2) {
     width: 70%;
   }
 }
-/* line 265, ../sass/main.scss */
+/* line 267, ../sass/main.scss */
 .terms-wrapper.active {
   display: flex !important;
 }
 
-/* line 272, ../sass/main.scss */
+/* line 274, ../sass/main.scss */
 #section1 div[id^='slide'] {
   align-content: center;
   align-items: center;
@@ -538,7 +542,7 @@ header .menu-wrap #menu-open div:nth-child(-n+2) {
   justify-content: center;
 }
 
-/* line 280, ../sass/main.scss */
+/* line 282, ../sass/main.scss */
 figcaption {
   font-family: 'dtl_nobelt_light', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   bottom: 0 !important;
@@ -553,46 +557,46 @@ figcaption {
   padding: 10px 0;
 }
 @media (min-width: 768px) and (-webkit-device-pixel-ratio: 1) {
-  /* line 280, ../sass/main.scss */
+  /* line 282, ../sass/main.scss */
   figcaption {
     line-height: 2.5em;
   }
 }
 
 @media (orientation: portrait) {
-  /* line 298, ../sass/main.scss */
+  /* line 300, ../sass/main.scss */
   .fp-controlArrow {
     display: none !important;
   }
 }
 @media (orientation: portrait) and (min-width: 650px) {
-  /* line 298, ../sass/main.scss */
+  /* line 300, ../sass/main.scss */
   .fp-controlArrow {
     display: block;
   }
 }
 
 @media (orientation: landscape) {
-  /* line 298, ../sass/main.scss */
+  /* line 300, ../sass/main.scss */
   .fp-controlArrow {
     transform: scale(0.5, 0.5) translateY(50%);
   }
 }
 @media (orientation: landscape) and (min-width: 650px) {
-  /* line 298, ../sass/main.scss */
+  /* line 300, ../sass/main.scss */
   .fp-controlArrow {
     transform: scale(1, 1) translateY(50%) !important;
   }
 }
 
-/* line 318, ../sass/main.scss */
+/* line 320, ../sass/main.scss */
 .fp-slidesNav {
   align-items: 0;
   bottom: 5px !important;
   display: flex;
   flex-flow: row nowrap;
 }
-/* line 324, ../sass/main.scss */
+/* line 326, ../sass/main.scss */
 .fp-slidesNav a span {
   background: transparent !important;
   border: 2px solid #fff !important;
@@ -600,7 +604,7 @@ figcaption {
   margin: 0 !important;
   width: 10px !important;
 }
-/* line 331, ../sass/main.scss */
+/* line 333, ../sass/main.scss */
 .fp-slidesNav a.active span, .fp-slidesNav a:hover span {
   background: #fff !important;
 }

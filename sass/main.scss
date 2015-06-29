@@ -185,18 +185,20 @@ header {
 			-moz-transform: rotate(-135deg);
 		}
 	}
-	
-	#open-terms {
-		padding-bottom:10px;
+	.legal-disclosures {
+		display: flex;
+		flex-flow: row wrap;
+		justify-content: space-between;
+		margin: 0 auto;
+		padding-bottom: 15px;
 		position: absolute;
-		width:100%;
-		bottom:0;left:0;
-		text-align: center;
+		width: 290px;
+		bottom: 0;right:0;left:0;
 		
 		a {
-			color: rgba(255,255,255,1);
-			font-family: 'dtl_nobelt_light';
-			font-size: 1.2em;
+			color: #fff;
+			font-family: $nobel-light-stack;
+			font-size: 1.1em;
 		}
 	}
 }
