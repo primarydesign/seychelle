@@ -53,7 +53,7 @@ text-align:center;
 .cbp-mc-form input,
 .cbp-mc-form textarea {
 	border: none;
-background: rgba(0,0,0,0.2);
+background: rgba(0,0,0,0.35);
  -webkit-appearance: none;
 }
 
@@ -66,7 +66,7 @@ background: rgba(0,0,0,0.2);
 .cbp-mc-form label:active + input,
 .cbp-mc-form label:active + textarea {
 	outline: none;
-	border: 3px rgba(0,0,0,0.2);
+	border: 3px rgba(0,0,0,0.35);
 }
 
 .cbp-mc-form select:focus {
@@ -97,6 +97,7 @@ background: rgba(0,0,0,0.2);
 	text-align: center;
 	padding-top: 40px;
 	clear: both;
+	padding-bottom:100px;
 }
 
 
@@ -136,6 +137,12 @@ background: rgba(0,0,0,0.2);
 		width: 100%;
 		padding: 10px;
 	}
+	.cbp-mc-form input,
+.cbp-mc-form textarea,
+.cbp-mc-form select {
+	width: 95%;
+
+}
 }
 
 /* Default form styles */
@@ -183,9 +190,7 @@ background: rgba(0,0,0,0.2);
 }
 
 .terms-wrapper .terms-box #terms p, .terms-wrapper h2 {
-
     color: #000;
-	
 }
 
 #section6 {
@@ -201,13 +206,18 @@ background: rgba(0,0,0,0.2);
 		line-height: 1.5em;
 		letter-spacing:1px;
 }
+
 figcaption {
-position: relative;
 background: rgba(73, 66, 60, 0.8) none repeat scroll 0% 0%;
 }
  
 .cbp-mc-submit-wrap, .contact h2 {
-text-align:left;
-padding-left:30px;
+text-align:center;
+padding-left:10px;
 line-height:1.3em;
 }
+
+#section6 {
+  background: url(../images/woman-tanning-by-the-swimming-pool_Seychelle_Santa-Monica-California.jpg);
+}
+ 
