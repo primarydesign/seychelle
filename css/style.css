@@ -97,7 +97,7 @@ figcaption {
 	top: 60px !important;
 	color: rgb(255, 255, 255);
 	margin: auto;
-	background: rgba(73, 66, 60, 0.8) none repeat scroll 0% 0%;
+	
 	width: 100%;
 	line-height:1.5em;
 	font-weight:200;
@@ -298,6 +298,11 @@ figcaption h3 {
 	 font-size:1.2em;
 	 line-height:2em;
  }
+ 
+ .cbp-mc-submit-wrap, .contact h2 {
+text-align:center !important;
+padding-left: 10px !important;
+}
  }
  
 @media (min-width:1000px) {
@@ -327,8 +332,11 @@ figcaption h3 {
     font-size: 1.5em;
     line-height: 1.6em;	 
  }
+ 
 
  }
+ 
+
  
  @media (min-width:700px) and (max-width:1599px) {
 	  .contact {
