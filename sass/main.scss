@@ -250,30 +250,35 @@ header {
 		}
 	}
 }
-#privacy-disclosure article, #terms-disclosure article {
-	background: #eee;
-	padding: 0 20px 20px;
-	color: #000;
-	h2, p {
+#privacy-disclosure, #terms-disclosure {
+	display: none;
+	&.active {display: flex;}
+	
+	article {
+		background: #eee;
+		padding: 0 20px 20px;
 		color: #000;
-		font-family: $nobel-light-stack;
-	}
-	h2 {
-		line-height: 40px;
-		text-align: center;
-	}
-	p {
-		font-size: 0.8em;
-		line-height: 1.1em;
-		text-align: justify;
-		padding-bottom: 10px;
-	}
-	li {
-		margin-left: 20px;
-	}
-	strong {
-		color: $orange;
-		font-weight: bold;
+		h2, p {
+			color: #000;
+			font-family: $nobel-light-stack;
+		}
+		h2 {
+			line-height: 40px;
+			text-align: center;
+		}
+		p {
+			font-size: 0.8em;
+			line-height: 1.1em;
+			text-align: justify;
+			padding-bottom: 10px;
+		}
+		li {
+			margin-left: 20px;
+		}
+		strong {
+			color: $orange;
+			font-weight: bold;
+		}
 	}
 }
 

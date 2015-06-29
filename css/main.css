@@ -517,39 +517,47 @@ header .menu-wrap #menu-open div:nth-child(-n+2) {
 }
 
 /* line 253, ../sass/main.scss */
+#privacy-disclosure, #terms-disclosure {
+  display: none;
+}
+/* line 255, ../sass/main.scss */
+#privacy-disclosure.active, #terms-disclosure.active {
+  display: flex;
+}
+/* line 257, ../sass/main.scss */
 #privacy-disclosure article, #terms-disclosure article {
   background: #eee;
   padding: 0 20px 20px;
   color: #000;
 }
-/* line 257, ../sass/main.scss */
+/* line 261, ../sass/main.scss */
 #privacy-disclosure article h2, #privacy-disclosure article p, #terms-disclosure article h2, #terms-disclosure article p {
   color: #000;
   font-family: "dtl_nobelt_light", sans-serif;
 }
-/* line 261, ../sass/main.scss */
+/* line 265, ../sass/main.scss */
 #privacy-disclosure article h2, #terms-disclosure article h2 {
   line-height: 40px;
   text-align: center;
 }
-/* line 265, ../sass/main.scss */
+/* line 269, ../sass/main.scss */
 #privacy-disclosure article p, #terms-disclosure article p {
   font-size: 0.8em;
   line-height: 1.1em;
   text-align: justify;
   padding-bottom: 10px;
 }
-/* line 271, ../sass/main.scss */
+/* line 275, ../sass/main.scss */
 #privacy-disclosure article li, #terms-disclosure article li {
   margin-left: 20px;
 }
-/* line 274, ../sass/main.scss */
+/* line 278, ../sass/main.scss */
 #privacy-disclosure article strong, #terms-disclosure article strong {
   color: #aa650d;
   font-weight: bold;
 }
 
-/* line 282, ../sass/main.scss */
+/* line 287, ../sass/main.scss */
 #section1 div[id^='slide'] {
   align-content: center;
   align-items: center;
@@ -557,7 +565,7 @@ header .menu-wrap #menu-open div:nth-child(-n+2) {
   justify-content: center;
 }
 
-/* line 290, ../sass/main.scss */
+/* line 295, ../sass/main.scss */
 figcaption {
   font-family: 'dtl_nobelt_light', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   bottom: 0 !important;
@@ -572,46 +580,46 @@ figcaption {
   padding: 10px 0;
 }
 @media (min-width: 768px) and (-webkit-device-pixel-ratio: 1) {
-  /* line 290, ../sass/main.scss */
+  /* line 295, ../sass/main.scss */
   figcaption {
     line-height: 2.5em;
   }
 }
 
 @media (orientation: portrait) {
-  /* line 308, ../sass/main.scss */
+  /* line 313, ../sass/main.scss */
   .fp-controlArrow {
     display: none !important;
   }
 }
 @media (orientation: portrait) and (min-width: 650px) {
-  /* line 308, ../sass/main.scss */
+  /* line 313, ../sass/main.scss */
   .fp-controlArrow {
     display: block;
   }
 }
 
 @media (orientation: landscape) {
-  /* line 308, ../sass/main.scss */
+  /* line 313, ../sass/main.scss */
   .fp-controlArrow {
     transform: scale(0.5, 0.5) translateY(50%);
   }
 }
 @media (orientation: landscape) and (min-width: 650px) {
-  /* line 308, ../sass/main.scss */
+  /* line 313, ../sass/main.scss */
   .fp-controlArrow {
     transform: scale(1, 1) translateY(50%) !important;
   }
 }
 
-/* line 328, ../sass/main.scss */
+/* line 333, ../sass/main.scss */
 .fp-slidesNav {
   align-items: 0;
   bottom: 5px !important;
   display: flex;
   flex-flow: row nowrap;
 }
-/* line 334, ../sass/main.scss */
+/* line 339, ../sass/main.scss */
 .fp-slidesNav a span {
   background: transparent !important;
   border: 2px solid #fff !important;
@@ -619,7 +627,7 @@ figcaption {
   margin: 0 !important;
   width: 10px !important;
 }
-/* line 341, ../sass/main.scss */
+/* line 346, ../sass/main.scss */
 .fp-slidesNav a.active span, .fp-slidesNav a:hover span {
   background: #fff !important;
 }
