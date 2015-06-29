@@ -165,5 +165,5 @@ $(document).ready(function() {
 			$.fn.fullpage.moveSlideRight();
 		}
 	}
-	setInterval(autoRotateSlider,4000);
+	setInterval(autoRotateSlider,7000);
 });
