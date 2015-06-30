@@ -1,5 +1,21 @@
 <?php
 
+$notify_ms = <<<EOD
+	<div class="notify n-ms">
+		<p>Thank you! Someone will be in contact with you soon.</p>
+	</div>
+EOD;
+$notify_mf = <<<EOD
+	<div class="notify n-mf">
+		<p>Sorry, your message failed to send. Please try submitting again.</p>
+	</div>
+EOD;
+$notify_ff = <<<EOD
+	<div class="notify n-ff">
+		<p>Sorry, some of your input was invalid. Please try submitting again.</p>
+	</div>
+EOD;
+
 if (!isset($_POST['submit'])) {
 /* no submission data */
 	
@@ -30,6 +46,7 @@ if (!isset($_POST['submit'])) {
 	if ($clearance !== 0) {
 	/* submission invalidation */
 		
+		$form_failure = true;
 		include 'index.html.php';
 		
 	} else {
@@ -44,13 +61,17 @@ if (!isset($_POST['submit'])) {
 		$message .= "\n" . $phone;
 		$message .= "\n" . $messg;
 		
-		//Initialize Mailer
-		
-		
+		//Initialize Mailer		
 		if (mail($to, $subject, $message, $from)) {
-			echo "success";
+			
+			$mail_success = true;
+			include 'index.html.php';
+			
 		} else {
-			echo "failure";
+			
+			$mail_failure = true;
+			include 'index.html.php';
+			
 		}
 		
 	}

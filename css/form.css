@@ -252,3 +252,33 @@ input.submit {
 input.submit.disabled {
 	background: #666 !important;
 }
+@keyframes noticeFadeOut {
+	from {
+		transform: translateY(0px);
+		opacity: 1;
+	}
+	to {
+		transform: translateY(0);
+		opacity: 0;
+	}
+}
+.notify {
+	animation: noticeFadeOut .3s linear 3s forwards;
+	height: 40px;
+	width: 400px;
+	display: flex;
+	justify-content: center;
+	align-content: center;
+	align-items: center;
+	background: rgba(170,101,13,.7);
+	border-radius: 8px;
+	position: fixed;
+	top:70px;
+	margin: auto;
+	left:0;right:0;
+}
+.notify p {
+	color: #fff;
+	text-align: center;
+	font-family: $nobel-light-stack;
+}

@@ -330,5 +330,9 @@
 	</div>
 </div><!--(privacy-policy)-->
 
+<?php echo ($form_failure === true) ? $notify_ff : ''; ?>
+<?php echo ($mail_success === true) ? $notify_ms : ''; ?>
+<?php echo ($mail_failure === true) ? $notify_mf : ''; ?>
+
 </body>
 </html>
