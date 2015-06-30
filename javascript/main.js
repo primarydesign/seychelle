@@ -1,48 +1,64 @@
 $(document).ready(function() {
+	//INITIALIZE FULLPAGE
 	$('#fullpage').fullpage({
 		verticalCentered: false,
 		slidesNavigation: true,
 		scrollOverflow: true,
 		css3: true
 	});
-	//MENU ACTIVATION
-	$('#menu-open').click(function(){
-		$('#menu-overlay').addClass('active');
-		$.fn.fullpage.setAllowScrolling(false);
-		$.fn.fullpage.setKeyboardScrolling(false);
-	});
-	$('#menu-close, #menu a').click(function(){
-		$('#menu-overlay').removeClass('active');
-		$.fn.fullpage.setAllowScrolling(true);
-		$.fn.fullpage.setKeyboardScrolling(true);
-	});
+	
 	//MENU NAVLINKS
+	//Clicking nav and menu links scroll to eponymous section
+	//AND remove `active` class from menu overlay.
 	$('#menu a, #sidenav li a').click(function(){
 		var $to = $(this).attr('class');
 		$to = $to.replace('toSect','');
 		$to = parseInt($to);
 		$.fn.fullpage.moveTo($to);
+		$('#menu-overlay').removeClass('active');
 	});
+	
 	//CONTACT BUTTONS
+	//Clicking contact buttons scrolls to contact form.
 	$('.contact-btn').click(function(){
 		$.fn.fullpage.moveTo(15);
 	});
-	//TERMS OF USE
-	$('#open-terms').click(function(){
-		$('.terms-wrapper').addClass('active');
-		$.fn.fullpage.setAllowScrolling(false);
-		$.fn.fullpage.setKeyboardScrolling(false);
-	});
-	$('#close-terms a').click(function(){
-		$('.terms-wrapper').removeClass('active');
-		$.fn.fullpage.setAllowScrolling(true);
-		$.fn.fullpage.setKeyboardScrolling(true);
-	});
+	
 	//BANNER TO TOP
+	//Click banner to move to top of page.
 	$('#banner img').click(function(){
 		$.fn.fullpage.moveTo(1);
 	});
+	
+	//OVERLAY OPENING & CLOSING
+	//Open element with id matching open-<id-name> class pattern.
+	$('[class^="open-"]').click(function(){
+		var $name =	$(this).attr('class');
+		$name = $name.match(/open-([a-zA-Z0-9-]+)/)[1];
+		$('#'+$name).addClass('active');
+	});
+	//Close element with id matching close-<id-name> class pattern.
+	$('.overlay .close').click(function(){
+		var $name =	$(this).attr('class');
+		$name = $name.match(/close-([a-zA-Z0-9-]+)/)[1];
+		$('#'+$name).removeClass('active');
+	});
+	
+	//DISABLE SCROLLING
+	//Disables scrolling if overlay active;
+	//AND reenables it otherwise;
+	function disableScroll() {
+		if ($('.overlay.active').length !== 0) {
+			$.fn.fullpage.setAllowScrolling(false);
+			$.fn.fullpage.setKeyboardScrolling(false);
+		} else {
+			$.fn.fullpage.setAllowScrolling(true);
+			$.fn.fullpage.setKeyboardScrolling(true);
+		}
+	} setInterval(disableScroll,1);
+	
 	//DYNAMIC HEADER TEXT
+	//Updates header text given the current section.
 	var sections = [
 		{
 			title: 'Penthouse 901',
@@ -129,7 +145,10 @@ $(document).ready(function() {
 				$htext.text(sections[i].title);
 			}
 		}
-	}
+	} setInterval(updateHeader,1);
+	
+	//DYNAMIC ACCORDION
+	//Updates accordion links given the current section.
 	function updateAccordion(){
 		
 		var $view = $('body').attr('class');
@@ -152,11 +171,10 @@ $(document).ready(function() {
 				}
 			}
 		}
-	}
-	setInterval(updateHeader,1);
-	setInterval(updateAccordion,1);
+	} setInterval(updateAccordion,1);
 	
 	//AUTO-ROTATE SLIDER
+	//Rotates through slides at fixed pace.
 	function autoRotateSlider() {
 		var $view = $('body').attr('class'),
 			 $sect = $view.replace(/fp-viewing-/,'').replace(/-slide\d+/,''),
@@ -164,6 +182,5 @@ $(document).ready(function() {
 		if ($sect == 0) {
 			$.fn.fullpage.moveSlideRight();
 		}
-	}
-	setInterval(autoRotateSlider,4000);
+	} setInterval(autoRotateSlider,7000);
 });
