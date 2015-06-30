@@ -137,16 +137,17 @@ figcaption {
 
 .btn-zoom, .btn-print {
 	list-style-position:inside;
-	    line-height: 2em;
+	line-height: 2em;
+	
 }
 
-.btn-zoom li {
-	  list-style-image:url(../images/zoom-icon.png);
-
-}
-
-.btn-print li {
- list-style-image:url(../images/print-icon.png);
+.btn-print li:before { 
+	content:'';  
+	display:inline-block;
+	height:16px;
+	width:14px;
+	background:url('../images/print-icon.svg') 0 2px no-repeat;
+	margin-right:5px; 
 }
 
 .plan-features {
@@ -156,9 +157,20 @@ figcaption {
 }
 
 .plan-features li {
+	/*
 	list-style-image:url(../images/diamond-bullet-point.png);
+	*/
+	list-style-type:none;
 	list-style-position:inside;
 }
+
+.plan-features li:before { 
+	content:"\2666";
+	margin-right:10px;
+	position:relative;
+	bottom:1px;
+}
+	
 
 button {
 	text-transform:uppercase;
@@ -215,6 +227,14 @@ button {
 .dining-info  {
 	padding-bottom:100px;	
 }
+
+figcaption {
+line-height: 20px;
+letter-spacing: 0;
+font-size: 14px;
+line-height: 18px !important;
+}
+
 }
 
 /* Additional Property Highlights */
@@ -226,10 +246,20 @@ button {
  }
  
  .highlights ul {
+	 /*
 	 list-style-image:url(../images/diamond-bullet-point-white.png);
+	 */
 	 list-style-position:inside;
+	 list-style-image:none;
  }
- 
+
+.highlights li:before {
+	content:"\2666";
+	margin-right:10px;
+	position:relative;
+	bottom:1px;
+}
+	 
 
  .highlights li {
     font-size: 1em;
@@ -347,7 +377,7 @@ padding-left: 30px !important;
 	 }
  }
  
-@media all and (orientation:portrait) {
+@media all and (max-width:959px) and (orientation:portrait) {
 	.property-features, .highlights {
 	height:auto;
 }
