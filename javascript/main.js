@@ -183,4 +183,85 @@ $(document).ready(function() {
 			$.fn.fullpage.moveSlideRight();
 		}
 	} setInterval(autoRotateSlider,7000);
+	
+	//REGEX DECLARATIONS
+	var regex = {
+		email: /[a-zA-Z0-9_.+-]+@[a-zA-Z0-9]+([.][a-zA-Z]+)+$/,
+		phone: /^\(?([0-9]{3})\)?[-. ]?([0-9]{3})[-. ]?([0-9]{4})$/
+	};
+	
+	//VALIDATE EMAIL
+	//triggers when user leaves field or provides input;
+	//manages `.valid` and `.invalid` on field;
+	$('#email').on('keydown keyup blur',function(){
+		var $input = $(this).val().trim();
+		if ($input.search(regex.email) === -1) {
+			$(this).addClass('invalid')
+				.removeClass('valid')
+		} else if ($input.search(regex.email) === 0) {
+			$(this).addClass('valid')
+				.removeClass('invalid')
+		}
+	});
+	
+	//VALIDATE PHONE
+	//triggers when user leaves field or provides input;
+	//manages `.valid` and `.invalid` on field;
+	$('#phone').on('keydown keyup blur',function(){
+		var $input = $(this).val().trim();
+		if ($input.search(regex.phone) === -1) {
+			$(this).addClass('invalid')
+				.removeClass('valid');
+		} else if ($input.search(regex.phone) === 0) {
+			$(this).addClass('valid')
+				.removeClass('invalid');
+		}
+	});
+	
+	//INITIALIZE EMPTIES
+	//checks whether field is empty upon load;
+	$('form .required').each(function(){
+		var $input = $(this).val().trim();
+		if ($input.length === 0) {
+			$(this).addClass('empty');
+		}
+	});
+	//CHECK TOUCHED
+	$('form input').blur(function(){
+		$(this).addClass('touched');
+	});
+	
+	//VALIDATE REQUIRED
+	//triggers when user leaves field or provides input;
+	//manages class `.empty` on fields with `.required`;
+	$('form .required').on('keydown keyup blur',function(){
+		var $input = $(this).val().trim();
+		if ($input.length === 0) {
+			$(this).addClass('empty')
+				.removeClass('valid')
+				.removeClass('invalid');
+		} else {
+			$(this).removeClass('empty');
+		}
+	});
+	
+	//DISABLE SUBMIT BUTTON
+	//add `disabled` attribute to submit button by default;
+	//removes attribute once no require fields are empty;
+	//and when all fields without `.noval` are `.valid`;
+	$('.submit').attr('disabled','').addClass('disabled');
+	function enableSubmit() {
+		var requireds = false, validates = false;
+		if ($('form .required').length == $('form .required:not(.empty)').length) {
+		 	requireds = true;
+		}
+		if ($('form input:not(.noval,.submit)').length == $('form input:not(.noval,.submit).valid').length) {
+			validates = true;
+		}
+		if (requireds == true & validates == true) {
+			$('.submit').removeAttr('disabled').removeClass('disabled');
+		} else {
+			$('.submit').attr('disabled','').addClass('disabled');
+		}
+	} setInterval(enableSubmit,1);
 });

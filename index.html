@@ -145,22 +145,34 @@
 			<h2>Learn More About The Seychelle Penthouse</h2>
 			<form action="form.php" method="post" class="cbp-mc-form">
 				<div class="cbp-mc-column">
-					<label for="first_name">First Name</label>
-					<input type="text" id="first_name" name="first_name">
-					<label for="last_name">Last Name</label>
-					<input type="text" id="last_name" name="last_name">
+					<label for="first_name">First Name
+						<input class="required noval" type="text" id="first_name" name="first_name">
+						<span class="err-empty">You cannot leave this empty</span>
+					</label>
+					
+					<label for="last_name">Last Name
+						<input class="required noval" type="text" id="last_name" name="last_name"/>
+						<span class="err-empty">You cannot leave this empty</span>
+					</label>
+					
 				</div>
 				<div class="cbp-mc-column">
-					<label for="email">Email Address</label>
-					<input type="text" id="email" name="email">
-					<label for="phone">Phone Number</label>
-					<input type="text" id="phone" name="phone">		
+					<label for="email">Email Address
+						<input class="required" type="text" id="email" name="email"/>
+						<span class="err-invalid">Enter a valid email</span>
+						<span class="err-empty">You cannot leave this empty</span>
+					</label>
+					<label for="phone">Phone Number
+						<input class="required" type="text" id="phone" name="phone"/>
+						<span class="err-invalid">Enter a valid phone number</span>
+						<span class="err-empty">You cannot leave this empty</span>
+					</label>
 				</div>
 				<div class="cbp-mc-column">
 					<label for="message">Message</label>
-					<textarea id="message" name="message"></textarea>
+					<textarea class="noval"id="message" name="message"></textarea>
 				</div>
-				<div class="cbp-mc-submit-wrap"><input class="cbp-mc-submit" type="submit" value="Submit" /></div>
+				<div class="cbp-mc-submit-wrap"><input class="cbp-mc-submit submit" type="submit" value="Submit" /></div>
 			</form>
 		</div>
 		<footer>The Seychelle Director of Sales / Mary Ann Osborn /1755 Ocean Avenue / Santa Monica, 90401 / Phone <a href="tel:3103941100" style="text-decoration:none; color:#ffffff">310.394.1100</a>

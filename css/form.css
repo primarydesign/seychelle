@@ -29,7 +29,7 @@ text-align:center;
 
 .cbp-mc-form label {
 	display: block;
-	padding: 20px 5px 10px 0px;
+	padding: 20px 5px 0px 0px;
 	font-size: .9em;
 	text-transform: uppercase;
 	letter-spacing: 1px;
@@ -224,4 +224,31 @@ line-height:1.3em;
 	.btn-zoom {
 		display: none;
 	}
+}
+textarea {
+	margin-top: 10px;
+}
+label > input {
+	margin: 10px 0 15px;
+}
+.empty.touched, .invalid.touched {
+	margin-bottom: 0;
+}
+.err-invalid, .err-empty {
+	display: none; /* default */
+	font-size: .6em;
+	line-height: 15px;
+	color: red;
+}
+.empty.touched ~ .err-empty {
+	display: block;
+}
+.invalid.touched ~ .err-invalid {
+	display: block;
+}
+input.submit {
+	margin-top: 0;
+}
+input.submit.disabled {
+	background: #666 !important;
 }
