@@ -791,3 +791,9 @@ figcaption {
 .fp-slidesNav a.active span, .fp-slidesNav a:hover span {
   background: #fff !important;
 }
+
+.legal-disclosures {
+	font-size:.7em;
+	width: 350px;
+	flex-flow: wrap;
+}
