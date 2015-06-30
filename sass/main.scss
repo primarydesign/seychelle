@@ -260,38 +260,35 @@ header {
 	display: none;
 	&.active {display: flex;}
 	
-	.close {
-		display: flex;
-		justify-content: center;
-		flex-flow: row nowrap;
-		position: absolute;
-		top: 10px;left: 10px;
-		.icon {
-			height: 1em;
-			width: 1em;
-			margin-right: 5px;
-			background-image: url('../images/zoom-out-icon.png');
-			background-position: center;
-			background-size: cover;
-		}
-		span {
-			font-family: $nobel-stack;
-			text-transform: uppercase;
-			line-height: 1em;
-		}
-	}
+//	.close {
+//		display: flex;
+//		justify-content: center;
+//		flex-flow: row nowrap;
+//		position: absolute;
+//		top: 10px;left: 10px;
+//		.icon {
+//			height: 1em;
+//			width: 1em;
+//			margin-right: 5px;
+//			background-image: url('../images/zoom-out-icon.png');
+//			background-position: center;
+//			background-size: cover;
+//		}
+//		span {
+//			font-family: $nobel-stack;
+//			text-transform: uppercase;
+//			line-height: 1em;
+//		}
+//	}
 	
 	.tableau {
 		height: 100%;
-		width: 100%;
-//		background-image: url('../images/penthouse.svg');
-		background-size: contain;
-		background-repeat: no-repeat;
-		background-position: center;
-		overflow: scroll;
+		width: 70%;
+		max-width: 100vh;
+		background: #555;
 		img {
-			height: 130vh;
-			width: auto;
+			height: 100%;
+			width: 100%;
 		}
 	}
 }

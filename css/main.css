@@ -533,79 +533,53 @@ header .menu-wrap #menu-open div:nth-child(-n+2) {
 #floorplan-zoom.active {
   display: flex;
 }
-/* line 263, ../sass/main.scss */
-#floorplan-zoom .close {
-  display: flex;
-  justify-content: center;
-  flex-flow: row nowrap;
-  position: absolute;
-  top: 10px;
-  left: 10px;
-}
-/* line 269, ../sass/main.scss */
-#floorplan-zoom .close .icon {
-  height: 1em;
-  width: 1em;
-  margin-right: 5px;
-  background-image: url("../images/zoom-out-icon.png");
-  background-position: center;
-  background-size: cover;
-}
-/* line 277, ../sass/main.scss */
-#floorplan-zoom .close span {
-  font-family: "dlt_nobelt_regular", sans-serif;
-  text-transform: uppercase;
-  line-height: 1em;
-}
 /* line 284, ../sass/main.scss */
 #floorplan-zoom .tableau {
   height: 100%;
-  width: 100%;
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-  overflow: scroll;
+  width: 70%;
+  max-width: 100vh;
+  background: #555;
 }
-/* line 292, ../sass/main.scss */
+/* line 289, ../sass/main.scss */
 #floorplan-zoom .tableau img {
-  height: 130vh;
-  width: auto;
+  height: 100%;
+  width: 100%;
 }
 
-/* line 301, ../sass/main.scss */
+/* line 298, ../sass/main.scss */
 #privacy-disclosure article, #terms-disclosure article {
   background: #eee;
   padding: 0 20px 20px;
   color: #000;
 }
-/* line 305, ../sass/main.scss */
+/* line 302, ../sass/main.scss */
 #privacy-disclosure article h2, #privacy-disclosure article p, #terms-disclosure article h2, #terms-disclosure article p {
   color: #000;
   font-family: "dtl_nobelt_light", sans-serif;
 }
-/* line 309, ../sass/main.scss */
+/* line 306, ../sass/main.scss */
 #privacy-disclosure article h2, #terms-disclosure article h2 {
   line-height: 40px;
   text-align: center;
 }
-/* line 313, ../sass/main.scss */
+/* line 310, ../sass/main.scss */
 #privacy-disclosure article p, #terms-disclosure article p {
   font-size: 0.8em;
   line-height: 1.1em;
   text-align: justify;
   padding-bottom: 10px;
 }
-/* line 319, ../sass/main.scss */
+/* line 316, ../sass/main.scss */
 #privacy-disclosure article li, #terms-disclosure article li {
   margin-left: 20px;
 }
-/* line 322, ../sass/main.scss */
+/* line 319, ../sass/main.scss */
 #privacy-disclosure article strong, #terms-disclosure article strong {
   color: #aa650d;
   font-weight: bold;
 }
 
-/* line 331, ../sass/main.scss */
+/* line 328, ../sass/main.scss */
 #section1 div[id^='slide'] {
   align-content: center;
   align-items: center;
@@ -613,7 +587,7 @@ header .menu-wrap #menu-open div:nth-child(-n+2) {
   justify-content: center;
 }
 
-/* line 339, ../sass/main.scss */
+/* line 336, ../sass/main.scss */
 figcaption {
   font-family: 'dtl_nobelt_light', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   bottom: 0 !important;
@@ -628,46 +602,46 @@ figcaption {
   padding: 10px 0;
 }
 @media (min-width: 768px) and (-webkit-device-pixel-ratio: 1) {
-  /* line 339, ../sass/main.scss */
+  /* line 336, ../sass/main.scss */
   figcaption {
     line-height: 2.5em;
   }
 }
 
 @media (orientation: portrait) {
-  /* line 357, ../sass/main.scss */
+  /* line 354, ../sass/main.scss */
   .fp-controlArrow {
     display: none !important;
   }
 }
 @media (orientation: portrait) and (min-width: 650px) {
-  /* line 357, ../sass/main.scss */
+  /* line 354, ../sass/main.scss */
   .fp-controlArrow {
     display: block;
   }
 }
 
 @media (orientation: landscape) {
-  /* line 357, ../sass/main.scss */
+  /* line 354, ../sass/main.scss */
   .fp-controlArrow {
     transform: scale(0.5, 0.5) translateY(50%);
   }
 }
 @media (orientation: landscape) and (min-width: 650px) {
-  /* line 357, ../sass/main.scss */
+  /* line 354, ../sass/main.scss */
   .fp-controlArrow {
     transform: scale(1, 1) translateY(50%) !important;
   }
 }
 
-/* line 377, ../sass/main.scss */
+/* line 374, ../sass/main.scss */
 .fp-slidesNav {
   align-items: 0;
   bottom: 5px !important;
   display: flex;
   flex-flow: row nowrap;
 }
-/* line 383, ../sass/main.scss */
+/* line 380, ../sass/main.scss */
 .fp-slidesNav a span {
   background: transparent !important;
   border: 2px solid #fff !important;
@@ -675,7 +649,7 @@ figcaption {
   margin: 0 !important;
   width: 10px !important;
 }
-/* line 390, ../sass/main.scss */
+/* line 387, ../sass/main.scss */
 .fp-slidesNav a.active span, .fp-slidesNav a:hover span {
   background: #fff !important;
 }
