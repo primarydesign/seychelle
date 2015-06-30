@@ -220,4 +220,8 @@ line-height:1.3em;
 #section6 {
   background: url(../images/woman-tanning-by-the-swimming-pool_Seychelle_Santa-Monica-California.jpg);
 }
- 
+@media (max-width:359px) {
+	.btn-zoom {
+		display: none;
+	}
+}
