@@ -101,7 +101,7 @@ figcaption {
 	color: rgb(255, 255, 255);
 	margin: auto;
 	width: 100%;
-	line-height:1.5em;
+	
 	font-weight:200;
 	letter-spacing:1px;
 	padding:10px;
@@ -154,6 +154,7 @@ figcaption {
 	font-family:'dtl_nobelt_light', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 	padding-top:30px;
 	line-height:2.2em;
+	max-width: 500px;
 }
 
 .plan-features li {
@@ -165,7 +166,7 @@ figcaption {
 }
 
 .plan-features li:before { 
-	content:"\2666";
+	content:"\25C7";
 	margin-right:10px;
 	position:relative;
 	bottom:1px;
@@ -233,6 +234,7 @@ line-height: 20px;
 letter-spacing: 0;
 font-size: 14px;
 line-height: 18px !important;
+text-align:left;
 }
 
 }
@@ -254,16 +256,18 @@ line-height: 18px !important;
  }
 
 .highlights li:before {
-	content:"\2666";
+	content:"\25C7";
 	margin-right:10px;
 	position:relative;
-	bottom:1px;
+	bottom:1px; 
 }
 	 
 
  .highlights li {
-    font-size: 1em;
-    line-height: 1.6em;
+    font-size: .9em;
+	line-height: 1em;
+	list-style-position: outside !important;
+	padding-bottom: 10px;
 }
  
  
@@ -278,7 +282,7 @@ line-height: 18px !important;
 max-width: 1280px;
 margin: auto;
 padding: 0px 10px;
-text-align: left;
+line-height:20px !important;
 }
 
 figcaption h3 {
@@ -321,6 +325,7 @@ figcaption h3 {
  .highlights li {
 	 font-size:1.2em;
 	 line-height:2em;
+     line-height: 1.5em;
  }
  
  .cbp-mc-submit-wrap, .contact h2 {
@@ -380,6 +385,7 @@ padding-left: 30px !important;
 @media all and (max-width:959px) and (orientation:portrait) {
 	.property-features, .highlights {
 	height:auto;
+	padding-bottom:150px;
 }
 }
 
