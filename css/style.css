@@ -165,7 +165,7 @@ figcaption {
 }
 
 .plan-features li:before { 
-	content:"\2666";
+	content:"\25c7";
 	margin-right:10px;
 	position:relative;
 	bottom:1px;
@@ -254,7 +254,7 @@ line-height: 18px !important;
  }
 
 .highlights li:before {
-	content:"\2666";
+	content:"\25c7";
 	margin-right:10px;
 	position:relative;
 	bottom:1px;
