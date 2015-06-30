@@ -22,6 +22,10 @@ $message .= "\n" . $email;
 $message .= "\n" . $phone;
 $message .= "\n" . $messg;
 
-mail($to, $subject, $message);
+if (mail($to, $subject, $message, $from)) {
+	echo "success";
+} else {
+	echo "failure";
+}
 
 ?>
