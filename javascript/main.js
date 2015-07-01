@@ -6,7 +6,7 @@ $(document).ready(function() {
 		scrollOverflow: true,
 		css3: true
 	});
-	
+
 	//MENU NAVLINKS
 	//Clicking nav and menu links scroll to eponymous section
 	//AND remove `active` class from menu overlay.
@@ -17,19 +17,19 @@ $(document).ready(function() {
 		$.fn.fullpage.moveTo($to);
 		$('#menu-overlay').removeClass('active');
 	});
-	
+
 	//CONTACT BUTTONS
 	//Clicking contact buttons scrolls to contact form.
 	$('.contact-btn').click(function(){
 		$.fn.fullpage.moveTo(15);
 	});
-	
+
 	//BANNER TO TOP
 	//Click banner to move to top of page.
 	$('#banner img').click(function(){
 		$.fn.fullpage.moveTo(1);
 	});
-	
+
 	//OVERLAY OPENING & CLOSING
 	//Open element with id matching open-<id-name> class pattern.
 	$('[class^="open-"]').click(function(){
@@ -43,7 +43,7 @@ $(document).ready(function() {
 		$name = $name.match(/close-([a-zA-Z0-9-]+)/)[1];
 		$('#'+$name).removeClass('active');
 	});
-	
+
 	//DISABLE SCROLLING
 	//Disables scrolling if overlay active;
 	//AND reenables it otherwise;
@@ -56,7 +56,7 @@ $(document).ready(function() {
 			$.fn.fullpage.setKeyboardScrolling(true);
 		}
 	} setInterval(disableScroll,1);
-	
+
 	//DYNAMIC HEADER TEXT
 	//Updates header text given the current section.
 	var sections = [
@@ -134,27 +134,27 @@ $(document).ready(function() {
 			max: 14
 		}
 	], $htext = $('#htext');
-	
+
 	function updateHeader() {
 		var $view = $('body').attr('class');
 		$view = $view.replace(/fp-viewing-/,'').replace(/-slide\d+/,'');
 		$view = parseInt($view);
-		
+
 		for(var i = 0; i < sections.length; i++){
 			if ($view >= sections[i].min && $view <= sections[i].max){
 				$htext.text(sections[i].title);
 			}
 		}
 	} setInterval(updateHeader,1);
-	
+
 	//DYNAMIC ACCORDION
 	//Updates accordion links given the current section.
 	function updateAccordion(){
-		
+
 		var $view = $('body').attr('class');
 		$view = $view.replace(/fp-viewing-/,'').replace(/-slide\d+/,'');
 		$view = parseInt($view);
-		
+
 		for(var j = 0; j < sections.length; j++){
 			if ($view >= sections[j].min && $view <= sections[j].max){
 				var $index = sections[j].min;
@@ -172,7 +172,7 @@ $(document).ready(function() {
 			}
 		}
 	} setInterval(updateAccordion,1);
-	
+
 	//AUTO-ROTATE SLIDER
 	//Rotates through slides at fixed pace.
 	function autoRotateSlider() {
@@ -183,13 +183,13 @@ $(document).ready(function() {
 			$.fn.fullpage.moveSlideRight();
 		}
 	} setInterval(autoRotateSlider,7000);
-	
+
 	//REGEX DECLARATIONS
 	var regex = {
 		email: /[a-zA-Z0-9_.+-]+@[a-zA-Z0-9]+([.][a-zA-Z]+)+$/,
 		phone: /^\(?([0-9]{3})\)?[-. ]?([0-9]{3})[-. ]?([0-9]{4})$/
 	};
-	
+
 	//VALIDATE EMAIL
 	//triggers when user leaves field or provides input;
 	//manages `.valid` and `.invalid` on field;
@@ -203,7 +203,7 @@ $(document).ready(function() {
 				.removeClass('invalid')
 		}
 	});
-	
+
 	//VALIDATE PHONE
 	//triggers when user leaves field or provides input;
 	//manages `.valid` and `.invalid` on field;
@@ -217,7 +217,7 @@ $(document).ready(function() {
 				.removeClass('invalid');
 		}
 	});
-	
+
 	//INITIALIZE EMPTIES
 	//checks whether field is empty upon load;
 	$('form .required').each(function(){
@@ -230,7 +230,7 @@ $(document).ready(function() {
 	$('form input').blur(function(){
 		$(this).addClass('touched');
 	});
-	
+
 	//VALIDATE REQUIRED
 	//triggers when user leaves field or provides input;
 	//manages class `.empty` on fields with `.required`;
@@ -244,7 +244,7 @@ $(document).ready(function() {
 			$(this).removeClass('empty');
 		}
 	});
-	
+
 	//DISABLE SUBMIT BUTTON
 	//add `disabled` attribute to submit button by default;
 	//removes attribute once no require fields are empty;
@@ -258,7 +258,9 @@ $(document).ready(function() {
 		if ($('form input:not(.noval,.submit)').length == $('form input:not(.noval,.submit).valid').length) {
 			validates = true;
 		}
-		if (requireds == true & validates == true) {
+		if ($('.submit').hasClass('disengage')) {
+			$('.submit').attr('disabled','').addClass('disabled');
+		} else if (requireds == true & validates == true) {
 			$('.submit').removeAttr('disabled').removeClass('disabled');
 		} else {
 			$('.submit').attr('disabled','').addClass('disabled');

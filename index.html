@@ -337,16 +337,14 @@
 			type: 'POST',
 			url: 'process.php',
 			data: $(this).serialize(),
-			beforeSend: $('#contact-form .submit').val('Sending...')
-				.addClass('disabled')
-				.attr('disabled', 'disabled'),
+			beforeSend: function(){
+				$('#contact-form .submit').val('Sending...').addClass('disengage');
+			},
 			success: function(){
-				$('#contact-form .submit').val('Sent');
+				$('#contact-form .submit').val('Sent').addClass('disengage');
 			},
 			error: function(){
-				$('#contact-from .submit').val('Send')
-					.removeClass('disabled')
-					.removeAttr('disabled');
+				$('#contact-from .submit').val('Send').removeClass('disengage').removeAttr('disabled');
 			}
 		});
 	});
