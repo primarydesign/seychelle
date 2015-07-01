@@ -31,7 +31,8 @@ if (isset($_POST)) {
 
 		//Load CMS Constants
 		$community_number = "215";
-		$followup_code = "B";
+		$followup_code = "E";
+		$custom_4 = ""
 
 		//Load Request Data
 		$data = "FirstName:" . $fname;
@@ -42,6 +43,7 @@ if (isset($_POST)) {
 		$data .= "~Comments:" . $message;
 		$data .= "~CommunityNumber:" . $community_number;
 		$data .= "~FollowupCode:" . $followup_code;
+		$data .= "~Custom4" . $custom_4;
 		$base = "http://www.buildercms.com/cms/custom/ProspectImport.aspx?ProspectData=";
 		$url .= $base . (urlencode($data));
 
