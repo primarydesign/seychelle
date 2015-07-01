@@ -6,15 +6,15 @@
 	<title>The Seychelle Penthouse - Santa Monica, California</title>
 	<meta name="description" content="The Seychelle Penthouse" />
 	<meta name="keywords"  content="seychelle, luxury penthouse,luxury beach house, santa monica " />
-    
+
     <meta name=viewport content="width=device-width, initial-scale=1">
-	
-	<link rel="stylesheet" type="text/css" href="css/reset.css" /> 
+
+	<link rel="stylesheet" type="text/css" href="css/reset.css" />
 	<link rel="stylesheet" type="text/css" href="vendors/fullpage/jquery.fullPage.css" />
 	<link rel="stylesheet" type="text/css" href="css/style.css" />
 	<link rel="stylesheet" type="text/css" href="css/main.css" />
     <link rel="stylesheet" type="text/css" href="css/form.css" />
-	
+
 	<!--[if IE]>
 		<script type="text/javascript">
 			 var console = { log: function() {} };
@@ -39,19 +39,18 @@
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
 	<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
 	
-	
 	<script type="text/javascript" src="vendors/waypoints/lib/noframework.waypoints.min.js"></script>
 	<script type="text/javascript" src="vendors/waypoints/lib/jquery.waypoints.min.js"></script>
 	<script type="text/javascript" src="vendors/fullpage/jquery.fullPage.js"></script>
 	<script type="text/javascript" src="vendors/fullpage/vendors/jquery.slimscroll.js"></script>
 	<script type="text/javascript" src="javascript/main.js"></script>
-    <script type="text/javascript" src="javascript/modernizr.custom.98582.js"></script>
+   <script type="text/javascript" src="javascript/modernizr.custom.98582.js"></script>
 	
 </head>
 <body>
 
 <main><div id="fullpage">
-	
+
 	<div class="section" id="section1">
 		<div class="slide" id="slide1" data-anchor="slide1">
 			<div class="circle">
@@ -149,6 +148,7 @@
 		<figcaption class="place">
 	<div class="caption-wrap">
 	<h3>Santa Monica Beach</h3>Covering 3.5 miles of scenic coastline, Santa Monica Beach is the epitome of California beach life. Enjoy a relaxing walk along the shore or a bike ride on the boardwalk and soak in the warmth of the sun.</div></figcaption></div>
+
 	<div class="section" id="section13">
 		<figcaption class="place">
 	<div class="caption-wrap">
@@ -160,36 +160,55 @@
 	<div class="section" id="section15">
 		<div class="contact">
 			<h2>Learn More About The Seychelle Penthouse</h2>
-			<form action="process.php" method="post" class="cbp-mc-form">
+			<form id="contact-form" class="cbp-mc-form">
 				<div class="cbp-mc-column">
 					<label for="first_name">First Name
-						<input class="required noval" type="text" id="first_name" name="first_name">
+						<input class="field required noval" type="text" id="first_name" name="first_name">
 						<span class="err-empty">You cannot leave this empty</span>
 					</label>
-					
+
 					<label for="last_name">Last Name
-						<input class="required noval" type="text" id="last_name" name="last_name"/>
+						<input class="field required noval" type="text" id="last_name" name="last_name"/>
 						<span class="err-empty">You cannot leave this empty</span>
 					</label>
-					
+					<label for="source">How you heard about us?
+						<select class="field required noval" name="source" id="source" form="#contact-form">
+							<option value="" selected>Select Source</option>
+							<option value="broker">Broker</option>
+							<option value="c-magazine">C Magazine</option>
+							<option value="e-blast">E-Blast</option>
+							<option value="la-times">LA Times</option>
+							<option value="mls-guide">MLS Guide</option>
+							<option value="online-ad">Online Ad</option>
+							<option value="online-search">Online Search</option>
+							<option value="press-article">Press Article</option>
+							<option value="press-online">Press Online</option>
+							<option value="referral">Referral</option>
+							<option value="site-signage">Site Signage</option>
+							<option value="social-media">Social Media</option>
+							<option value="wall-street-journal">Wall Street Journal</option>
+							<option value="word-of-mouth">Word of Mouth</option>
+						</select>
+						<span class="err-empty">You cannot leave this empty</span>
+					</label>
 				</div>
 				<div class="cbp-mc-column">
 					<label for="email">Email Address
-						<input class="required" type="text" id="email" name="email"/>
+						<input class="field required" type="text" id="email" name="email"/>
 						<span class="err-invalid">Enter a valid email</span>
 						<span class="err-empty">You cannot leave this empty</span>
 					</label>
 					<label for="phone">Phone Number
-						<input class="required" type="text" id="phone" name="phone"/>
+						<input class="field required" type="text" id="phone" name="phone"/>
 						<span class="err-invalid">Enter a valid phone number</span>
 						<span class="err-empty">You cannot leave this empty</span>
 					</label>
 				</div>
 				<div class="cbp-mc-column">
 					<label for="message">Message</label>
-					<textarea class="noval"id="message" name="message"></textarea>
+					<textarea class="field noval"id="message" name="message"></textarea>
 				</div>
-				<div class="cbp-mc-submit-wrap"><input class="cbp-mc-submit submit" type="submit" value="Submit" /></div>
+				<div class="cbp-mc-submit-wrap"><input class="cbp-mc-submit submit" type="submit" name="submit" value="Submit" /></div>
 			</form>
 		</div>
 		<footer>The Seychelle Director of Sales / Mary Ann Osborn /1755 Ocean Avenue / Santa Monica, 90401 / Phone <a href="tel:3103941100" style="text-decoration:none; color:#ffffff">310.394.1100</a></footer>
@@ -216,11 +235,11 @@
 </header>
 
 <div class="side-wrap">
-	
+
 	<div id="banner">
 		<img src="images/seychelle-logo.gif" alt="logo"/>
 	</div>
-	
+
 	<nav id="sidenav">
 		<ul>
 			<li><a class="toSect2">Penthouse</a>
@@ -250,16 +269,16 @@
 			<li><a class="toSect15">Contact</a></li>
 		</ul>
 	</nav>
-	
+
 </div><!--(side-bar)-->
 
 <div id="menu-overlay" class="overlay fullscreen">
-	
+
 	<a id="menu-close" class="close close-menu-overlay">
 		<div class="close-menu-overlay"></div>
 		<div class="close-menu-overlay"></div>
 	</a>
-	
+
 	<nav id="menu">
 		<ul>
 			<li><a class="toSect02">The Penthouse</a></li>
@@ -269,7 +288,7 @@
 			<li><a class="toSect15">Contact</a></li>
 		</ul>
 	</nav>
-	
+
 	<ul class="legal-disclosures">
 		<li><a class="open-terms-disclosure">terms & conditions</a></li>
 		<li><a class="open-privacy-disclosure">privacy policy</a></li>
@@ -353,5 +372,24 @@
 	</div>
 </div><!--(privacy-policy)-->
 
+<script type="text/javascript">
+	$('#contact-form').on('submit', function(e){
+		e.preventDefault();
+		$.ajax({
+			type: 'POST',
+			url: 'process.php',
+			data: $(this).serialize(),
+			beforeSend: function(){
+				$('#contact-form .submit').val('Sending...').addClass('disengage');
+			},
+			success: function(){
+				$('#contact-form .submit').val('Sent').addClass('disengage');
+			},
+			error: function(){
+				$('#contact-from .submit').val('Send').removeClass('disengage').removeAttr('disabled');
+			}
+		});
+	});
+</script>
 </body>
 </html>
