@@ -101,10 +101,9 @@ figcaption {
 	color: rgb(255, 255, 255);
 	margin: auto;
 	width: 100%;
-	
 	font-weight:200;
 	letter-spacing:1px;
-	padding:10px;
+	padding:15px !important;
 }
 
 /* Floor Plan Section */
@@ -153,7 +152,7 @@ figcaption {
 .plan-features {
 	font-family:'dtl_nobelt_light', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 	padding-top:30px;
-	line-height:2.2em;
+	line-height:2em;
 	max-width: 500px;
 }
 
@@ -163,14 +162,18 @@ figcaption {
 	*/
 	list-style-type:none;
 	list-style-position:inside;
+	line-height: 1.4em;
+	padding-bottom: 15px;
 }
 
+/*
 .plan-features li:before { 
 	content:"\25C7";
 	margin-right:10px;
 	position:relative;
 	bottom:1px;
 }
+*/
 	
 
 button {
@@ -196,8 +199,9 @@ button {
 
 /* Property Features */
 
-.property-features, .highlights {
-    height: 100%;
+.property-features, .highlights, .dining-info {
+    height:auto;
+	min-height: 100%;
     padding-bottom: 150px !important;
 }
 
@@ -218,16 +222,8 @@ button {
 	background: rgba(73,66,60,0.8);
 }
 
-@media (min-width: 801px) {
-.dining-info  {
-	height:100%;	
-}
-}
 
-@media (max-width: 800px) {
-.dining-info  {
-	padding-bottom:100px;	
-}
+@media (max-width: 900px) {
 
 figcaption {
 line-height: 20px;
@@ -235,6 +231,11 @@ letter-spacing: 0;
 font-size: 14px;
 line-height: 18px !important;
 text-align:left;
+
+}
+
+.floorplan {
+margin-top:75px;
 }
 
 }
@@ -255,19 +256,19 @@ text-align:left;
 	 list-style-image:none;
  }
 
+
 .highlights li:before {
 	content:"\25C7";
 	margin-right:10px;
 	position:relative;
 	bottom:1px; 
-}
-	 
+} 
 
  .highlights li {
-    font-size: .9em;
-	line-height: 1em;
+    font-size: 1em;
+	line-height: 1.2em;
 	list-style-position: outside !important;
-	padding-bottom: 10px;
+	padding-bottom: 15px;
 }
  
  
@@ -291,14 +292,46 @@ figcaption h3 {
 }
 
 
- 
+ footer {
+	color:#ffffff;
+	background:rgb(73,66,60);
+	font-family:'dtl_nobelt_regular', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-size:10px;
+	text-transform: uppercase;
+	line-height: 15px;
+	padding: 10px;
+	width:100%;
+	bottom:20px;
+	position:absolute;
+	letter-spacing:1px;
+}
+
+.legal-footer {
+	font-size: 9px;
+	background: #000000 none repeat scroll 0% 0%;
+	position:absolute;
+	bottom:0;
+	height: 20px;
+	line-height: 0px;
+	padding:10px;
+	color:#ffffff;
+}
+
+.legal-footer a {
+	padding: 0px 10px;
+	text-decoration:none;
+	color:#ffffff;
+}
+
+
+
  /* Non-mobile queries */
 
  @media (min-width:700px) {
 
 .highlights, .property-features, .dining-info {
 	padding-left: 250px;
-	padding-right: 50px;
+	padding-right: 100px;
  }
 
 .floorplan-info { 
@@ -309,7 +342,7 @@ figcaption h3 {
 	display:none;
 }
  
-.property-features, .highlights {
+.property-features, .highlights { 
 	paddig-bottom:0;
 }
 
@@ -332,7 +365,9 @@ figcaption h3 {
 text-align:left !important;
 padding-left: 30px !important;
 }
- }
+
+
+}
  
 @media (min-width:1000px) {
 
@@ -362,11 +397,14 @@ padding-left: 30px !important;
     line-height: 1.6em;	 
  }
  
+ footer {
+	font-size:14px;
+	line-height:20px;
+	 }
 
  }
  
 
- 
  @media (min-width:700px) and (max-width:1599px) {
 	  .contact {
 		 padding: 0 50px 0 250px;
@@ -382,24 +420,27 @@ padding-left: 30px !important;
 	 }
  }
  
-@media all and (max-width:959px) and (orientation:portrait) {
-	.property-features, .highlights {
-	height:auto;
-	padding-bottom:150px;
-}
+
+@media all and (max-width:640px)  {
+	
+.plan-features li {
+	list-style-type:none;
+	list-style-position:outside;
+	
 }
 
+.plan-features li:before, .highlights li:before {
+	content:"";
+	margin-right:0px;
+}
+
+}
+
+@media all and (max-width:420px)  {
+.legal-footer {
+	display:none;
+}
 footer {
-	color:#ffffff;
-	background:rgb(73,66,60);
-	font-family:'dtl_nobelt_regular', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-	font-size:14px;
-	line-height:50px;
-	text-transform: uppercase;
-	line-height: 20px;
-	padding: 15px;
-	width:100%;
 	bottom:0px;
-	position:absolute;
-	letter-spacing:1px;
+}
 }

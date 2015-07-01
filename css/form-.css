@@ -29,7 +29,7 @@ text-align:center;
 
 .cbp-mc-form label {
 	display: block;
-	padding: 20px 5px 0px 0px;
+	padding: 20px 5px 10px 0px;
 	font-size: .9em;
 	text-transform: uppercase;
 	letter-spacing: 1px;
@@ -209,6 +209,7 @@ background: rgba(0,0,0,0.35);
 
 figcaption {
 background: rgba(73, 66, 60, 0.8) none repeat scroll 0% 0%;
+padding:15px;
 }
  
 .cbp-mc-submit-wrap, .contact h2 {
@@ -224,43 +225,4 @@ line-height:1.3em;
 	.btn-zoom {
 		display: none;
 	}
-}
-textarea {
-	margin-top: 10px;
-}
-label > input {
-	margin: 10px 0 15px;
-}
-.empty.touched, .invalid.touched {
-	margin-bottom: 0;
-}
-.err-invalid, .err-empty {
-	display: none; /* default */
-	font-size: .6em;
-	line-height: 15px;
-	color: red;
-}
-.empty.touched ~ .err-empty {
-	display: block;
-}
-.invalid.touched ~ .err-invalid {
-	display: block;
-}
-input.submit {
-	margin-top: 0;
-}
-input.submit.disabled {
-	background: #666 !important;
-}
-
-.side-wrap #sidenav {
-    padding: 15px;
-}
-
-.side-wrap #sidenav li {
-    margin: 15px 0px;
-}
-
-#slide1 .circle, #slide2 .circle, #slide3 .circle {
-background-repeat:no-repeat;
 }
