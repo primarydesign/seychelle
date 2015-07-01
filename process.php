@@ -6,12 +6,13 @@ if (isset($_POST)) {
 	$lname = $_POST['last_name'];
 	$email = $_POST['email'];
 	$phone = $_POST['phone'];
-	$messg = $_POST['message'];
+	$source = $_POST['source'];
+	$message = $_POST['message'];
 
 	$clearance = 0;
 
 	//Validate Requireds
-	$reqs = [$fname,$lname,$email,$phone];
+	$reqs = [$fname,$lname,$email,$phone,$source];
 	foreach( $reqs as $r ) {
 		$clearance += (required($r)) ? 0 : 1;}
 	//Validate Email
@@ -23,27 +24,29 @@ if (isset($_POST)) {
 	if ($clearance !== 0) {
 	/* submission invalidation */
 
-		$form_failure = true;
-		include 'index.html.php';
+		/* error-handling */
 
 	} else {
 	/* submission clear */
 
-		//Load mailer Data
-		$to = "mitchell@primarydesign.com";
-		$subject = "User Message from Seychell Penthouse";
-		$from = "From:" . $email;
-		$message = $fname . " " . $lname;
-		$message .= "\n" . $email;
-		$message .= "\n" . $phone;
-		$message .= "\n" . $messg;
+		//Load CMS Constants
+		$community_number = "215";
+		$followup_code = "B";
 
-		//Initialize Mailer
-		if (mail($to, $subject, $message, $from)) {
-			$mail_success = true;
-		} else {
-			$mail_failure = true;
-		}
+		//Load Request Data
+		$data = "FirstName:" . $fname;
+		$data .= "~LastName:" . $lname;
+		$data .= "~Email:" . $email;
+		$data .= "~Phone:" . $phone;
+		$data .= "~Source:" . $source;
+		$data .= "~Comments:" . $message;
+		$data .= "~CommunityNumber:" . $community_number;
+		$data .= "~FollowupCode:" . $followup_code;
+		$base = "http://www.buildercms.com/cms/custom/ProspectImport.aspx?ProspectData=";
+		$url .= $base . (urlencode($data));
+
+		//Initialize Mailer & Request
+		$response = implode('',file($url));
 
 	}/**(submission)**/
 }
