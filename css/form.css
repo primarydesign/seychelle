@@ -50,10 +50,9 @@ text-align:center;
 	background: transparent;
 }
 
-.cbp-mc-form input,
-.cbp-mc-form textarea {
+.cbp-mc-form .field {
 	border: none;
-background: rgba(0,0,0,0.35);
+background: rgba(0,0,0,0.5);
  -webkit-appearance: none;
 }
 
@@ -225,10 +224,14 @@ line-height:1.3em;
 		display: none;
 	}
 }
-textarea {
-	margin-top: 10px;
+select, option {
+	text-transform: initial;
 }
-label > input {
+.cbp-mc-column {
+	padding-bottom: 0;
+	padding-top: 0;
+}
+.field {
 	margin: 10px 0 15px;
 }
 .empty.touched, .invalid.touched {

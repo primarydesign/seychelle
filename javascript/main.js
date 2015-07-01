@@ -227,7 +227,7 @@ $(document).ready(function() {
 		}
 	});
 	//CHECK TOUCHED
-	$('form input').blur(function(){
+	$('form .field').on('blur', function(){
 		$(this).addClass('touched');
 	});
 
