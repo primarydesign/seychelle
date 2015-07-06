@@ -1,0 +1,15 @@
+ErrorDocument 404 /index.html
+
+Options +FollowSymLinks -MultiViews
+# Turn mod_rewrite on
+RewriteEngine On
+RewriteBase /
+
+RewriteCond %{REQUEST_FILENAME} -l [OR]
+RewriteCond %{REQUEST_FILENAME} -f [OR]
+RewriteCond %{REQUEST_FILENAME} -d
+RewriteRule ^ - [L]
+
+RewriteRule ^abc/([^/]+)/([^/]+)/?$ /index.html?aa=$1&bb=$2 [NE,L,QSA]
+
+RewriteRule ^abc/([^/]+)/?$ /index.html?aa=$1 [NE,L,QSA]

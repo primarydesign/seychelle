@@ -145,7 +145,7 @@ figcaption {
 	display:inline-block;
 	height:16px;
 	width:14px;
-	background:url('../images/print-icon.svg') 0 2px no-repeat;
+	background:url('../images/print-icon.svg') no-repeat;
 	margin-right:5px; 
 }
 
@@ -434,6 +434,12 @@ padding-left: 30px !important;
 	margin-right:0px;
 }
 
+header h2 {
+    text-align: left;
+	padding-left:30px !important;
+}
+
+
 }
 
 @media all and (max-width:420px)  {
@@ -442,5 +448,20 @@ padding-left: 30px !important;
 }
 footer {
 	bottom:0px;
+}
+}
+
+
+/* iPhone 6 + 6 Plus Landscape */
+
+@media (orientation:landscape) and (-webkit-min-device-pixel-ratio: 2), 
+(min-resolution: 192dpi) { 
+    figcaption {
+		font-size:10px;
+		line-height:14px;
+		bottom:0px;
+	}
+	.side-wrap #sidenav {
+    	display:none;
 }
 }

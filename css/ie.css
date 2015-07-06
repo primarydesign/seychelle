@@ -1,0 +1,22 @@
+@charset "UTF-8";
+.circle {
+	height: 450px !important;
+	width: 450px !important;
+	background-size:contain !important;
+	margin:auto;
+	padding-top:300px;
+	positoin:relative;
+	top:150px;
+  }
+  header .menu-wrap #menu-open {
+	display: block;
+	height: 100%;
+	position: relative;
+	top: 19px;
+  }
+  #menu-overlay.active {
+		display: block;
+		padding-left: 25%;
+		padding-top: 150px;
+	}
+	
