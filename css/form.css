@@ -221,11 +221,6 @@ padding-left:10px;
 line-height:1.3em;
 }
 
-#section6 {
-  background: url(../images/woman-tanning-by-the-swimming-pool_Seychelle_Santa-Monica-California.jpg);
-}
-
-
 select, option {
 	text-transform: initial;
 }
@@ -312,4 +307,22 @@ background-repeat:no-repeat;
 }
 }
 
+#section0 {
+  background: url(../images/penthouse-outdoor-terrace_Seychelle_Santa-Monica-California.jpg);
+}
 
+#section6 {
+  background: url(../images/woman-tanning-by-the-swimming-pool_Seychelle_Santa-Monica-California.jpg);
+}
+
+#section3 {
+  background: url(../images/open-kitchen-in-the-luxury-penthouse_Seychelle_Santa-Monica-California.jpg);
+}
+
+#section2 {
+  background: url(../images/luxury-penthouse-great-room-at-the_Seychelle_Santa-Monica-California.jpg);
+}
+
+#slide3 {
+   background: url(../images/luxury-penthouse-great-room-at-the_Seychelle_Santa-Monica-California.jpg);
+}

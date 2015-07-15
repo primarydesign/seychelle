@@ -61,11 +61,11 @@ $(document).ready(function() {
 	//Updates header text given the current section.
 	var sections = [
 		{
-			title: 'Penthouse 901',
+			title: 'Penthouse 903',
 			min: 0,
 			max: 0
 		},{
-			title: 'Penthouse 901',
+			title: 'Penthouse 903',
 			min: 1,
 			max: 3,
 			subs: [
